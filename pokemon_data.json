@@ -1,0 +1,3351 @@
+{
+    "bulbasaur": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 45,
+            "attack": 49,
+            "defense": 49,
+            "sp_atk": 65,
+            "sp_def": 65,
+            "speed": 45
+        },
+        "moves": [
+            "Vine Whip",
+            "Tackle",
+            "Growl",
+            "Leech Seed",
+            "Growth",
+            "Razor Leaf",
+            "Solar Beam",
+            "Poison Powder",
+            "Sleep Powder"
+        ]
+    },
+    "ivysaur": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 62,
+            "defense": 63,
+            "sp_atk": 80,
+            "sp_def": 80,
+            "speed": 60
+        },
+        "moves": [
+            "Vine Whip",
+            "Tackle",
+            "Growl",
+            "Leech Seed",
+            "Growth",
+            "Razor Leaf",
+            "Solar Beam",
+            "Poison Powder",
+            "Sleep Powder"
+        ]
+    },
+    "venusaur": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 83,
+            "sp_atk": 100,
+            "sp_def": 100,
+            "speed": 80
+        },
+        "moves": [
+            "Vine Whip",
+            "Tackle",
+            "Growl",
+            "Leech Seed",
+            "Growth",
+            "Razor Leaf",
+            "Solar Beam",
+            "Poison Powder",
+            "Sleep Powder"
+        ]
+    },
+    "charmander": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "sp_atk": 60,
+            "sp_def": 50,
+            "speed": 65
+        },
+        "moves": [
+            "Scratch",
+            "Leer",
+            "Growl",
+            "Ember",
+            "Flamethrower",
+            "Fire Spin",
+            "Rage",
+            "Slash"
+        ]
+    },
+    "charmeleon": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 58,
+            "attack": 64,
+            "defense": 58,
+            "sp_atk": 80,
+            "sp_def": 65,
+            "speed": 80
+        },
+        "moves": [
+            "Scratch",
+            "Leer",
+            "Growl",
+            "Ember",
+            "Flamethrower",
+            "Fire Spin",
+            "Rage",
+            "Slash"
+        ]
+    },
+    "charizard": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 78,
+            "attack": 84,
+            "defense": 78,
+            "sp_atk": 109,
+            "sp_def": 85,
+            "speed": 100
+        },
+        "moves": [
+            "Scratch",
+            "Leer",
+            "Growl",
+            "Ember",
+            "Flamethrower",
+            "Fire Spin",
+            "Rage",
+            "Slash"
+        ]
+    },
+    "squirtle": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 44,
+            "attack": 48,
+            "defense": 65,
+            "sp_atk": 50,
+            "sp_def": 64,
+            "speed": 43
+        },
+        "moves": [
+            "Tackle",
+            "Tail Whip",
+            "Bite",
+            "Water Gun",
+            "Hydro Pump",
+            "Withdraw",
+            "Skull Bash",
+            "Bubble"
+        ]
+    },
+    "wartortle": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 59,
+            "attack": 63,
+            "defense": 80,
+            "sp_atk": 65,
+            "sp_def": 80,
+            "speed": 58
+        },
+        "moves": [
+            "Tackle",
+            "Tail Whip",
+            "Bite",
+            "Water Gun",
+            "Hydro Pump",
+            "Withdraw",
+            "Skull Bash",
+            "Bubble"
+        ]
+    },
+    "blastoise": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 79,
+            "attack": 83,
+            "defense": 100,
+            "sp_atk": 85,
+            "sp_def": 105,
+            "speed": 78
+        },
+        "moves": [
+            "Tackle",
+            "Tail Whip",
+            "Bite",
+            "Water Gun",
+            "Hydro Pump",
+            "Withdraw",
+            "Skull Bash",
+            "Bubble"
+        ]
+    },
+    "caterpie": {
+        "types": [
+            "Bug"
+        ],
+        "base_stats": {
+            "hp": 45,
+            "attack": 30,
+            "defense": 35,
+            "sp_atk": 20,
+            "sp_def": 20,
+            "speed": 45
+        },
+        "moves": [
+            "Tackle",
+            "String Shot"
+        ]
+    },
+    "metapod": {
+        "types": [
+            "Bug"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 20,
+            "defense": 55,
+            "sp_atk": 25,
+            "sp_def": 25,
+            "speed": 30
+        },
+        "moves": [
+            "Harden"
+        ]
+    },
+    "butterfree": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 45,
+            "defense": 50,
+            "sp_atk": 90,
+            "sp_def": 80,
+            "speed": 70
+        },
+        "moves": [
+            "Gust",
+            "Whirlwind",
+            "Supersonic",
+            "Psybeam",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Confusion"
+        ]
+    },
+    "weedle": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 35,
+            "defense": 30,
+            "sp_atk": 20,
+            "sp_def": 20,
+            "speed": 50
+        },
+        "moves": [
+            "Poison Sting",
+            "String Shot"
+        ]
+    },
+    "kakuna": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 45,
+            "attack": 25,
+            "defense": 50,
+            "sp_atk": 25,
+            "sp_def": 25,
+            "speed": 35
+        },
+        "moves": [
+            "Harden"
+        ]
+    },
+    "beedrill": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 40,
+            "sp_atk": 45,
+            "sp_def": 80,
+            "speed": 75
+        },
+        "moves": [
+            "Fury Attack",
+            "Twineedle",
+            "Pin Missile",
+            "Agility",
+            "Rage",
+            "Focus Energy"
+        ]
+    },
+    "pidgey": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 40,
+            "sp_atk": 35,
+            "sp_def": 35,
+            "speed": 56
+        },
+        "moves": [
+            "Gust",
+            "Wing Attack",
+            "Whirlwind",
+            "Sand Attack",
+            "Agility",
+            "Quick Attack",
+            "Mirror Move"
+        ]
+    },
+    "pidgeotto": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 63,
+            "attack": 60,
+            "defense": 55,
+            "sp_atk": 50,
+            "sp_def": 50,
+            "speed": 71
+        },
+        "moves": [
+            "Gust",
+            "Wing Attack",
+            "Whirlwind",
+            "Sand Attack",
+            "Agility",
+            "Quick Attack",
+            "Mirror Move"
+        ]
+    },
+    "pidgeot": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 83,
+            "attack": 80,
+            "defense": 75,
+            "sp_atk": 70,
+            "sp_def": 70,
+            "speed": 101
+        },
+        "moves": [
+            "Gust",
+            "Wing Attack",
+            "Whirlwind",
+            "Sand Attack",
+            "Agility",
+            "Quick Attack",
+            "Mirror Move"
+        ]
+    },
+    "rattata": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 30,
+            "attack": 56,
+            "defense": 35,
+            "sp_atk": 25,
+            "sp_def": 35,
+            "speed": 72
+        },
+        "moves": [
+            "Tackle",
+            "Tail Whip",
+            "Quick Attack",
+            "Focus Energy",
+            "Hyper Fang",
+            "Super Fang"
+        ]
+    },
+    "raticate": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 81,
+            "defense": 60,
+            "sp_atk": 50,
+            "sp_def": 70,
+            "speed": 97
+        },
+        "moves": [
+            "Tackle",
+            "Tail Whip",
+            "Quick Attack",
+            "Focus Energy",
+            "Hyper Fang",
+            "Super Fang"
+        ]
+    },
+    "spearow": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 60,
+            "defense": 30,
+            "sp_atk": 31,
+            "sp_def": 31,
+            "speed": 70
+        },
+        "moves": [
+            "Fury Attack",
+            "Leer",
+            "Growl",
+            "Peck",
+            "Drill Peck",
+            "Agility",
+            "Mirror Move"
+        ]
+    },
+    "fearow": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 65,
+            "sp_atk": 61,
+            "sp_def": 61,
+            "speed": 100
+        },
+        "moves": [
+            "Fury Attack",
+            "Leer",
+            "Growl",
+            "Peck",
+            "Drill Peck",
+            "Agility",
+            "Mirror Move"
+        ]
+    },
+    "ekans": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 35,
+            "attack": 60,
+            "defense": 44,
+            "sp_atk": 40,
+            "sp_def": 54,
+            "speed": 55
+        },
+        "moves": [
+            "Wrap",
+            "Poison Sting",
+            "Leer",
+            "Bite",
+            "Acid",
+            "Screech",
+            "Glare"
+        ]
+    },
+    "arbok": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 95,
+            "defense": 69,
+            "sp_atk": 65,
+            "sp_def": 79,
+            "speed": 80
+        },
+        "moves": [
+            "Wrap",
+            "Poison Sting",
+            "Leer",
+            "Bite",
+            "Acid",
+            "Screech",
+            "Glare"
+        ]
+    },
+    "pikachu": {
+        "types": [
+            "Electric"
+        ],
+        "base_stats": {
+            "hp": 35,
+            "attack": 55,
+            "defense": 40,
+            "sp_atk": 50,
+            "sp_def": 50,
+            "speed": 90
+        },
+        "moves": [
+            "Slam",
+            "Tail Whip",
+            "Growl",
+            "Thunder Shock",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Thunder",
+            "Agility",
+            "Quick Attack",
+            "Double Team"
+        ]
+    },
+    "raichu": {
+        "types": [
+            "Electric"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 90,
+            "defense": 55,
+            "sp_atk": 90,
+            "sp_def": 80,
+            "speed": 110
+        },
+        "moves": [
+            "Growl",
+            "Thunder Shock",
+            "Thunder Wave"
+        ]
+    },
+    "sandshrew": {
+        "types": [
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 75,
+            "defense": 85,
+            "sp_atk": 20,
+            "sp_def": 30,
+            "speed": 40
+        },
+        "moves": [
+            "Scratch",
+            "Sand Attack",
+            "Poison Sting",
+            "Swift",
+            "Fury Swipes",
+            "Slash"
+        ]
+    },
+    "sandslash": {
+        "types": [
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 75,
+            "attack": 100,
+            "defense": 110,
+            "sp_atk": 45,
+            "sp_def": 55,
+            "speed": 65
+        },
+        "moves": [
+            "Scratch",
+            "Sand Attack",
+            "Poison Sting",
+            "Swift",
+            "Fury Swipes",
+            "Slash"
+        ]
+    },
+    "nidoran-f": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 47,
+            "defense": 52,
+            "sp_atk": 40,
+            "sp_def": 40,
+            "speed": 41
+        },
+        "moves": [
+            "Scratch",
+            "Double Kick",
+            "Tackle",
+            "Tail Whip",
+            "Poison Sting",
+            "Bite",
+            "Growl",
+            "Fury Swipes"
+        ]
+    },
+    "nidorina": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 70,
+            "attack": 62,
+            "defense": 67,
+            "sp_atk": 55,
+            "sp_def": 55,
+            "speed": 56
+        },
+        "moves": [
+            "Scratch",
+            "Double Kick",
+            "Tackle",
+            "Tail Whip",
+            "Poison Sting",
+            "Bite",
+            "Growl",
+            "Fury Swipes"
+        ]
+    },
+    "nidoqueen": {
+        "types": [
+            "Poison",
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 92,
+            "defense": 87,
+            "sp_atk": 75,
+            "sp_def": 85,
+            "speed": 76
+        },
+        "moves": [
+            "Scratch",
+            "Double Kick",
+            "Tackle",
+            "Body Slam",
+            "Tail Whip",
+            "Poison Sting"
+        ]
+    },
+    "nidoran-m": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 46,
+            "attack": 57,
+            "defense": 40,
+            "sp_atk": 40,
+            "sp_def": 40,
+            "speed": 50
+        },
+        "moves": [
+            "Double Kick",
+            "Horn Attack",
+            "Fury Attack",
+            "Horn Drill",
+            "Tackle",
+            "Poison Sting",
+            "Leer",
+            "Focus Energy"
+        ]
+    },
+    "nidorino": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 61,
+            "attack": 72,
+            "defense": 57,
+            "sp_atk": 55,
+            "sp_def": 55,
+            "speed": 65
+        },
+        "moves": [
+            "Double Kick",
+            "Horn Attack",
+            "Fury Attack",
+            "Horn Drill",
+            "Tackle",
+            "Poison Sting",
+            "Leer",
+            "Focus Energy"
+        ]
+    },
+    "nidoking": {
+        "types": [
+            "Poison",
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 81,
+            "attack": 102,
+            "defense": 77,
+            "sp_atk": 85,
+            "sp_def": 75,
+            "speed": 85
+        },
+        "moves": [
+            "Double Kick",
+            "Horn Attack",
+            "Tackle",
+            "Thrash",
+            "Poison Sting"
+        ]
+    },
+    "clefairy": {
+        "types": [
+            "Fairy"
+        ],
+        "base_stats": {
+            "hp": 70,
+            "attack": 45,
+            "defense": 48,
+            "sp_atk": 60,
+            "sp_def": 65,
+            "speed": 35
+        },
+        "moves": [
+            "Pound",
+            "Double Slap",
+            "Growl",
+            "Sing",
+            "Minimize",
+            "Defense Curl",
+            "Light Screen",
+            "Metronome"
+        ]
+    },
+    "clefable": {
+        "types": [
+            "Fairy"
+        ],
+        "base_stats": {
+            "hp": 95,
+            "attack": 70,
+            "defense": 73,
+            "sp_atk": 95,
+            "sp_def": 90,
+            "speed": 60
+        },
+        "moves": [
+            "Double Slap",
+            "Sing",
+            "Minimize",
+            "Metronome"
+        ]
+    },
+    "vulpix": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 38,
+            "attack": 41,
+            "defense": 40,
+            "sp_atk": 50,
+            "sp_def": 65,
+            "speed": 65
+        },
+        "moves": [
+            "Tail Whip",
+            "Roar",
+            "Ember",
+            "Flamethrower",
+            "Fire Spin",
+            "Quick Attack",
+            "Confuse Ray"
+        ]
+    },
+    "ninetales": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 73,
+            "attack": 76,
+            "defense": 75,
+            "sp_atk": 81,
+            "sp_def": 100,
+            "speed": 100
+        },
+        "moves": [
+            "Tail Whip",
+            "Roar",
+            "Ember",
+            "Quick Attack"
+        ]
+    },
+    "jigglypuff": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "base_stats": {
+            "hp": 115,
+            "attack": 45,
+            "defense": 20,
+            "sp_atk": 45,
+            "sp_def": 25,
+            "speed": 20
+        },
+        "moves": [
+            "Pound",
+            "Double Slap",
+            "Body Slam",
+            "Double Edge",
+            "Sing",
+            "Disable",
+            "Defense Curl",
+            "Rest"
+        ]
+    },
+    "wigglytuff": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "base_stats": {
+            "hp": 140,
+            "attack": 70,
+            "defense": 45,
+            "sp_atk": 85,
+            "sp_def": 50,
+            "speed": 45
+        },
+        "moves": [
+            "Double Slap",
+            "Sing",
+            "Disable",
+            "Defense Curl"
+        ]
+    },
+    "zubat": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 35,
+            "sp_atk": 30,
+            "sp_def": 40,
+            "speed": 55
+        },
+        "moves": [
+            "Wing Attack",
+            "Bite",
+            "Supersonic",
+            "Confuse Ray",
+            "Haze",
+            "Leech Life"
+        ]
+    },
+    "golbat": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 75,
+            "attack": 80,
+            "defense": 70,
+            "sp_atk": 65,
+            "sp_def": 75,
+            "speed": 90
+        },
+        "moves": [
+            "Wing Attack",
+            "Bite",
+            "Supersonic",
+            "Screech",
+            "Confuse Ray",
+            "Haze",
+            "Leech Life"
+        ]
+    },
+    "oddish": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 45,
+            "attack": 50,
+            "defense": 55,
+            "sp_atk": 75,
+            "sp_def": 65,
+            "speed": 30
+        },
+        "moves": [
+            "Acid",
+            "Absorb",
+            "Solar Beam",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Petal Dance"
+        ]
+    },
+    "gloom": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 65,
+            "defense": 70,
+            "sp_atk": 85,
+            "sp_def": 75,
+            "speed": 40
+        },
+        "moves": [
+            "Acid",
+            "Absorb",
+            "Solar Beam",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Petal Dance"
+        ]
+    },
+    "vileplume": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 75,
+            "attack": 80,
+            "defense": 85,
+            "sp_atk": 110,
+            "sp_def": 90,
+            "speed": 50
+        },
+        "moves": [
+            "Acid",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Petal Dance"
+        ]
+    },
+    "paras": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "base_stats": {
+            "hp": 35,
+            "attack": 70,
+            "defense": 55,
+            "sp_atk": 45,
+            "sp_def": 55,
+            "speed": 25
+        },
+        "moves": [
+            "Scratch",
+            "Growth",
+            "Stun Spore",
+            "Leech Life",
+            "Spore",
+            "Slash"
+        ]
+    },
+    "parasect": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 95,
+            "defense": 80,
+            "sp_atk": 60,
+            "sp_def": 80,
+            "speed": 30
+        },
+        "moves": [
+            "Scratch",
+            "Growth",
+            "Stun Spore",
+            "Leech Life",
+            "Spore",
+            "Slash"
+        ]
+    },
+    "venonat": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 55,
+            "defense": 50,
+            "sp_atk": 40,
+            "sp_def": 55,
+            "speed": 45
+        },
+        "moves": [
+            "Tackle",
+            "Supersonic",
+            "Disable",
+            "Psybeam",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Confusion",
+            "Psychic",
+            "Leech Life"
+        ]
+    },
+    "venomoth": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 70,
+            "attack": 65,
+            "defense": 60,
+            "sp_atk": 90,
+            "sp_def": 75,
+            "speed": 90
+        },
+        "moves": [
+            "Tackle",
+            "Supersonic",
+            "Disable",
+            "Psybeam",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Confusion",
+            "Psychic",
+            "Leech Life"
+        ]
+    },
+    "diglett": {
+        "types": [
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 10,
+            "attack": 55,
+            "defense": 25,
+            "sp_atk": 35,
+            "sp_def": 45,
+            "speed": 95
+        },
+        "moves": [
+            "Scratch",
+            "Sand Attack",
+            "Growl",
+            "Earthquake",
+            "Dig",
+            "Slash"
+        ]
+    },
+    "dugtrio": {
+        "types": [
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 35,
+            "attack": 100,
+            "defense": 50,
+            "sp_atk": 50,
+            "sp_def": 70,
+            "speed": 120
+        },
+        "moves": [
+            "Scratch",
+            "Sand Attack",
+            "Growl",
+            "Earthquake",
+            "Dig",
+            "Slash"
+        ]
+    },
+    "meowth": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 35,
+            "sp_atk": 40,
+            "sp_def": 40,
+            "speed": 90
+        },
+        "moves": [
+            "Pay Day",
+            "Scratch",
+            "Bite",
+            "Growl",
+            "Screech",
+            "Fury Swipes",
+            "Slash"
+        ]
+    },
+    "persian": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 70,
+            "defense": 60,
+            "sp_atk": 65,
+            "sp_def": 65,
+            "speed": 115
+        },
+        "moves": [
+            "Pay Day",
+            "Scratch",
+            "Bite",
+            "Growl",
+            "Screech",
+            "Fury Swipes",
+            "Slash"
+        ]
+    },
+    "psyduck": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 52,
+            "defense": 48,
+            "sp_atk": 65,
+            "sp_def": 50,
+            "speed": 55
+        },
+        "moves": [
+            "Scratch",
+            "Tail Whip",
+            "Disable",
+            "Hydro Pump",
+            "Confusion",
+            "Fury Swipes"
+        ]
+    },
+    "golduck": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 78,
+            "sp_atk": 95,
+            "sp_def": 80,
+            "speed": 85
+        },
+        "moves": [
+            "Scratch",
+            "Tail Whip",
+            "Disable",
+            "Hydro Pump",
+            "Confusion",
+            "Fury Swipes"
+        ]
+    },
+    "mankey": {
+        "types": [
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 80,
+            "defense": 35,
+            "sp_atk": 35,
+            "sp_def": 45,
+            "speed": 70
+        },
+        "moves": [
+            "Karate Chop",
+            "Scratch",
+            "Thrash",
+            "Leer",
+            "Low Kick",
+            "Seismic Toss",
+            "Screech",
+            "Focus Energy",
+            "Fury Swipes"
+        ]
+    },
+    "primeape": {
+        "types": [
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 105,
+            "defense": 60,
+            "sp_atk": 60,
+            "sp_def": 70,
+            "speed": 95
+        },
+        "moves": [
+            "Karate Chop",
+            "Scratch",
+            "Thrash",
+            "Leer",
+            "Low Kick",
+            "Seismic Toss",
+            "Rage",
+            "Screech",
+            "Focus Energy",
+            "Fury Swipes"
+        ]
+    },
+    "growlithe": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 70,
+            "defense": 45,
+            "sp_atk": 70,
+            "sp_def": 50,
+            "speed": 60
+        },
+        "moves": [
+            "Take Down",
+            "Leer",
+            "Bite",
+            "Roar",
+            "Ember",
+            "Flamethrower",
+            "Agility"
+        ]
+    },
+    "arcanine": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 110,
+            "defense": 80,
+            "sp_atk": 100,
+            "sp_def": 80,
+            "speed": 95
+        },
+        "moves": [
+            "Take Down",
+            "Leer",
+            "Roar",
+            "Ember"
+        ]
+    },
+    "poliwag": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 50,
+            "defense": 40,
+            "sp_atk": 40,
+            "sp_def": 40,
+            "speed": 90
+        },
+        "moves": [
+            "Double Slap",
+            "Body Slam",
+            "Water Gun",
+            "Hydro Pump",
+            "Hypnosis",
+            "Amnesia",
+            "Bubble"
+        ]
+    },
+    "poliwhirl": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 65,
+            "defense": 65,
+            "sp_atk": 50,
+            "sp_def": 50,
+            "speed": 90
+        },
+        "moves": [
+            "Double Slap",
+            "Body Slam",
+            "Water Gun",
+            "Hydro Pump",
+            "Hypnosis",
+            "Amnesia",
+            "Bubble"
+        ]
+    },
+    "poliwrath": {
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 95,
+            "defense": 95,
+            "sp_atk": 70,
+            "sp_def": 90,
+            "speed": 70
+        },
+        "moves": [
+            "Double Slap",
+            "Body Slam",
+            "Water Gun",
+            "Hypnosis"
+        ]
+    },
+    "abra": {
+        "types": [
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 25,
+            "attack": 20,
+            "defense": 15,
+            "sp_atk": 105,
+            "sp_def": 55,
+            "speed": 90
+        },
+        "moves": [
+            "Teleport"
+        ]
+    },
+    "kadabra": {
+        "types": [
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 35,
+            "defense": 30,
+            "sp_atk": 120,
+            "sp_def": 70,
+            "speed": 105
+        },
+        "moves": [
+            "Disable",
+            "Psybeam",
+            "Confusion",
+            "Psychic",
+            "Teleport",
+            "Recover",
+            "Reflect",
+            "Kinesis"
+        ]
+    },
+    "alakazam": {
+        "types": [
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 50,
+            "defense": 45,
+            "sp_atk": 135,
+            "sp_def": 95,
+            "speed": 120
+        },
+        "moves": [
+            "Disable",
+            "Psybeam",
+            "Confusion",
+            "Psychic",
+            "Teleport",
+            "Recover",
+            "Reflect",
+            "Kinesis"
+        ]
+    },
+    "machop": {
+        "types": [
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 70,
+            "attack": 80,
+            "defense": 50,
+            "sp_atk": 35,
+            "sp_def": 35,
+            "speed": 35
+        },
+        "moves": [
+            "Karate Chop",
+            "Leer",
+            "Submission",
+            "Low Kick",
+            "Seismic Toss",
+            "Focus Energy"
+        ]
+    },
+    "machoke": {
+        "types": [
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 100,
+            "defense": 70,
+            "sp_atk": 50,
+            "sp_def": 60,
+            "speed": 45
+        },
+        "moves": [
+            "Karate Chop",
+            "Leer",
+            "Submission",
+            "Low Kick",
+            "Seismic Toss",
+            "Focus Energy"
+        ]
+    },
+    "machamp": {
+        "types": [
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 130,
+            "defense": 80,
+            "sp_atk": 65,
+            "sp_def": 85,
+            "speed": 55
+        },
+        "moves": [
+            "Karate Chop",
+            "Leer",
+            "Submission",
+            "Low Kick",
+            "Seismic Toss",
+            "Focus Energy"
+        ]
+    },
+    "bellsprout": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 75,
+            "defense": 35,
+            "sp_atk": 70,
+            "sp_def": 30,
+            "speed": 40
+        },
+        "moves": [
+            "Slam",
+            "Vine Whip",
+            "Wrap",
+            "Acid",
+            "Growth",
+            "Razor Leaf",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder"
+        ]
+    },
+    "weepinbell": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 50,
+            "sp_atk": 85,
+            "sp_def": 45,
+            "speed": 55
+        },
+        "moves": [
+            "Slam",
+            "Vine Whip",
+            "Wrap",
+            "Acid",
+            "Growth",
+            "Razor Leaf",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder"
+        ]
+    },
+    "victreebel": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 105,
+            "defense": 65,
+            "sp_atk": 100,
+            "sp_def": 70,
+            "speed": 70
+        },
+        "moves": [
+            "Wrap",
+            "Acid",
+            "Razor Leaf",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder"
+        ]
+    },
+    "tentacool": {
+        "types": [
+            "Water",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 40,
+            "defense": 35,
+            "sp_atk": 50,
+            "sp_def": 100,
+            "speed": 70
+        },
+        "moves": [
+            "Wrap",
+            "Poison Sting",
+            "Supersonic",
+            "Acid",
+            "Water Gun",
+            "Hydro Pump",
+            "Screech",
+            "Barrier",
+            "Constrict"
+        ]
+    },
+    "tentacruel": {
+        "types": [
+            "Water",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 70,
+            "defense": 65,
+            "sp_atk": 80,
+            "sp_def": 120,
+            "speed": 100
+        },
+        "moves": [
+            "Wrap",
+            "Poison Sting",
+            "Supersonic",
+            "Acid",
+            "Water Gun",
+            "Hydro Pump",
+            "Screech",
+            "Barrier",
+            "Constrict"
+        ]
+    },
+    "geodude": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 80,
+            "defense": 100,
+            "sp_atk": 30,
+            "sp_def": 30,
+            "speed": 20
+        },
+        "moves": [
+            "Tackle",
+            "Rock Throw",
+            "Earthquake",
+            "Harden",
+            "Defense Curl",
+            "Self Destruct",
+            "Explosion"
+        ]
+    },
+    "graveler": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 95,
+            "defense": 115,
+            "sp_atk": 45,
+            "sp_def": 45,
+            "speed": 35
+        },
+        "moves": [
+            "Tackle",
+            "Rock Throw",
+            "Earthquake",
+            "Harden",
+            "Defense Curl",
+            "Self Destruct",
+            "Explosion"
+        ]
+    },
+    "golem": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 120,
+            "defense": 130,
+            "sp_atk": 55,
+            "sp_def": 65,
+            "speed": 45
+        },
+        "moves": [
+            "Tackle",
+            "Rock Throw",
+            "Earthquake",
+            "Harden",
+            "Defense Curl",
+            "Self Destruct",
+            "Explosion"
+        ]
+    },
+    "ponyta": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 85,
+            "defense": 55,
+            "sp_atk": 65,
+            "sp_def": 65,
+            "speed": 90
+        },
+        "moves": [
+            "Stomp",
+            "Take Down",
+            "Tail Whip",
+            "Growl",
+            "Ember",
+            "Fire Spin",
+            "Agility"
+        ]
+    },
+    "rapidash": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 100,
+            "defense": 70,
+            "sp_atk": 80,
+            "sp_def": 80,
+            "speed": 105
+        },
+        "moves": [
+            "Stomp",
+            "Take Down",
+            "Tail Whip",
+            "Growl",
+            "Ember",
+            "Fire Spin",
+            "Agility"
+        ]
+    },
+    "slowpoke": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 65,
+            "defense": 65,
+            "sp_atk": 40,
+            "sp_def": 40,
+            "speed": 15
+        },
+        "moves": [
+            "Headbutt",
+            "Growl",
+            "Disable",
+            "Water Gun",
+            "Confusion",
+            "Psychic",
+            "Amnesia"
+        ]
+    },
+    "slowbro": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 95,
+            "attack": 75,
+            "defense": 110,
+            "sp_atk": 100,
+            "sp_def": 80,
+            "speed": 30
+        },
+        "moves": [
+            "Headbutt",
+            "Growl",
+            "Disable",
+            "Water Gun",
+            "Confusion",
+            "Psychic",
+            "Withdraw",
+            "Amnesia"
+        ]
+    },
+    "magnemite": {
+        "types": [
+            "Electric",
+            "Steel"
+        ],
+        "base_stats": {
+            "hp": 25,
+            "attack": 35,
+            "defense": 70,
+            "sp_atk": 95,
+            "sp_def": 55,
+            "speed": 45
+        },
+        "moves": [
+            "Tackle",
+            "Supersonic",
+            "Sonic Boom",
+            "Thunder Shock",
+            "Thunder Wave",
+            "Screech",
+            "Swift"
+        ]
+    },
+    "magneton": {
+        "types": [
+            "Electric",
+            "Steel"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 60,
+            "defense": 95,
+            "sp_atk": 120,
+            "sp_def": 70,
+            "speed": 70
+        },
+        "moves": [
+            "Tackle",
+            "Supersonic",
+            "Sonic Boom",
+            "Thunder Shock",
+            "Thunder Wave",
+            "Screech",
+            "Swift"
+        ]
+    },
+    "farfetchd": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 52,
+            "attack": 90,
+            "defense": 55,
+            "sp_atk": 58,
+            "sp_def": 62,
+            "speed": 60
+        },
+        "moves": [
+            "Swords Dance",
+            "Sand Attack",
+            "Fury Attack",
+            "Leer",
+            "Peck",
+            "Agility",
+            "Slash"
+        ]
+    },
+    "doduo": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 35,
+            "attack": 85,
+            "defense": 45,
+            "sp_atk": 35,
+            "sp_def": 35,
+            "speed": 75
+        },
+        "moves": [
+            "Fury Attack",
+            "Growl",
+            "Peck",
+            "Drill Peck",
+            "Agility",
+            "Rage",
+            "Tri Attack"
+        ]
+    },
+    "dodrio": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 110,
+            "defense": 70,
+            "sp_atk": 60,
+            "sp_def": 60,
+            "speed": 110
+        },
+        "moves": [
+            "Fury Attack",
+            "Growl",
+            "Peck",
+            "Drill Peck",
+            "Agility",
+            "Rage",
+            "Tri Attack"
+        ]
+    },
+    "seel": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 45,
+            "defense": 55,
+            "sp_atk": 45,
+            "sp_def": 70,
+            "speed": 45
+        },
+        "moves": [
+            "Headbutt",
+            "Take Down",
+            "Growl",
+            "Ice Beam",
+            "Aurora Beam",
+            "Rest"
+        ]
+    },
+    "dewgong": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 70,
+            "defense": 80,
+            "sp_atk": 70,
+            "sp_def": 95,
+            "speed": 70
+        },
+        "moves": [
+            "Headbutt",
+            "Take Down",
+            "Growl",
+            "Ice Beam",
+            "Aurora Beam",
+            "Rest"
+        ]
+    },
+    "grimer": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 80,
+            "defense": 50,
+            "sp_atk": 40,
+            "sp_def": 50,
+            "speed": 25
+        },
+        "moves": [
+            "Pound",
+            "Disable",
+            "Screech",
+            "Harden",
+            "Minimize",
+            "Sludge",
+            "Poison Gas",
+            "Acid Armor"
+        ]
+    },
+    "muk": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 105,
+            "attack": 105,
+            "defense": 75,
+            "sp_atk": 65,
+            "sp_def": 100,
+            "speed": 50
+        },
+        "moves": [
+            "Pound",
+            "Disable",
+            "Screech",
+            "Harden",
+            "Minimize",
+            "Sludge",
+            "Poison Gas",
+            "Acid Armor"
+        ]
+    },
+    "shellder": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 30,
+            "attack": 65,
+            "defense": 100,
+            "sp_atk": 45,
+            "sp_def": 25,
+            "speed": 40
+        },
+        "moves": [
+            "Tackle",
+            "Leer",
+            "Supersonic",
+            "Ice Beam",
+            "Aurora Beam",
+            "Withdraw",
+            "Clamp"
+        ]
+    },
+    "cloyster": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 95,
+            "defense": 180,
+            "sp_atk": 85,
+            "sp_def": 45,
+            "speed": 70
+        },
+        "moves": [
+            "Supersonic",
+            "Aurora Beam",
+            "Withdraw",
+            "Clamp",
+            "Spike Cannon"
+        ]
+    },
+    "gastly": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 30,
+            "attack": 35,
+            "defense": 30,
+            "sp_atk": 100,
+            "sp_def": 35,
+            "speed": 80
+        },
+        "moves": [
+            "Hypnosis",
+            "Night Shade",
+            "Confuse Ray",
+            "Lick",
+            "Dream Eater"
+        ]
+    },
+    "haunter": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 45,
+            "attack": 50,
+            "defense": 45,
+            "sp_atk": 115,
+            "sp_def": 55,
+            "speed": 95
+        },
+        "moves": [
+            "Hypnosis",
+            "Night Shade",
+            "Confuse Ray",
+            "Lick",
+            "Dream Eater"
+        ]
+    },
+    "gengar": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 65,
+            "defense": 60,
+            "sp_atk": 130,
+            "sp_def": 75,
+            "speed": 110
+        },
+        "moves": [
+            "Hypnosis",
+            "Night Shade",
+            "Confuse Ray",
+            "Lick",
+            "Dream Eater"
+        ]
+    },
+    "onix": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 35,
+            "attack": 45,
+            "defense": 160,
+            "sp_atk": 30,
+            "sp_def": 45,
+            "speed": 70
+        },
+        "moves": [
+            "Bind",
+            "Slam",
+            "Tackle",
+            "Rock Throw",
+            "Rage",
+            "Screech",
+            "Harden"
+        ]
+    },
+    "drowzee": {
+        "types": [
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 48,
+            "defense": 45,
+            "sp_atk": 43,
+            "sp_def": 90,
+            "speed": 42
+        },
+        "moves": [
+            "Pound",
+            "Headbutt",
+            "Disable",
+            "Confusion",
+            "Psychic",
+            "Hypnosis",
+            "Meditate",
+            "Poison Gas"
+        ]
+    },
+    "hypno": {
+        "types": [
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 85,
+            "attack": 73,
+            "defense": 70,
+            "sp_atk": 73,
+            "sp_def": 115,
+            "speed": 67
+        },
+        "moves": [
+            "Pound",
+            "Headbutt",
+            "Disable",
+            "Confusion",
+            "Psychic",
+            "Hypnosis",
+            "Meditate",
+            "Poison Gas"
+        ]
+    },
+    "krabby": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 30,
+            "attack": 105,
+            "defense": 90,
+            "sp_atk": 25,
+            "sp_def": 25,
+            "speed": 50
+        },
+        "moves": [
+            "Vice Grip",
+            "Guillotine",
+            "Stomp",
+            "Leer",
+            "Harden",
+            "Bubble",
+            "Crabhammer"
+        ]
+    },
+    "kingler": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 130,
+            "defense": 115,
+            "sp_atk": 50,
+            "sp_def": 50,
+            "speed": 75
+        },
+        "moves": [
+            "Vice Grip",
+            "Guillotine",
+            "Stomp",
+            "Leer",
+            "Harden",
+            "Bubble",
+            "Crabhammer"
+        ]
+    },
+    "voltorb": {
+        "types": [
+            "Electric"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 30,
+            "defense": 50,
+            "sp_atk": 55,
+            "sp_def": 55,
+            "speed": 100
+        },
+        "moves": [
+            "Tackle",
+            "Sonic Boom",
+            "Screech",
+            "Light Screen",
+            "Self Destruct",
+            "Swift",
+            "Explosion"
+        ]
+    },
+    "electrode": {
+        "types": [
+            "Electric"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 50,
+            "defense": 70,
+            "sp_atk": 80,
+            "sp_def": 80,
+            "speed": 150
+        },
+        "moves": [
+            "Tackle",
+            "Sonic Boom",
+            "Screech",
+            "Light Screen",
+            "Self Destruct",
+            "Swift",
+            "Explosion"
+        ]
+    },
+    "exeggcute": {
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 40,
+            "defense": 80,
+            "sp_atk": 60,
+            "sp_def": 45,
+            "speed": 40
+        },
+        "moves": [
+            "Leech Seed",
+            "Solar Beam",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Hypnosis",
+            "Reflect",
+            "Barrage"
+        ]
+    },
+    "exeggutor": {
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 95,
+            "attack": 95,
+            "defense": 85,
+            "sp_atk": 125,
+            "sp_def": 75,
+            "speed": 55
+        },
+        "moves": [
+            "Stomp",
+            "Hypnosis",
+            "Barrage"
+        ]
+    },
+    "cubone": {
+        "types": [
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 50,
+            "defense": 95,
+            "sp_atk": 40,
+            "sp_def": 50,
+            "speed": 35
+        },
+        "moves": [
+            "Headbutt",
+            "Thrash",
+            "Tail Whip",
+            "Leer",
+            "Growl",
+            "Rage",
+            "Focus Energy",
+            "Bone Club",
+            "Bonemerang"
+        ]
+    },
+    "marowak": {
+        "types": [
+            "Ground"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 80,
+            "defense": 110,
+            "sp_atk": 50,
+            "sp_def": 80,
+            "speed": 45
+        },
+        "moves": [
+            "Headbutt",
+            "Thrash",
+            "Tail Whip",
+            "Leer",
+            "Growl",
+            "Rage",
+            "Focus Energy",
+            "Bone Club",
+            "Bonemerang"
+        ]
+    },
+    "hitmonlee": {
+        "types": [
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 120,
+            "defense": 53,
+            "sp_atk": 35,
+            "sp_def": 110,
+            "speed": 87
+        },
+        "moves": [
+            "Double Kick",
+            "Mega Kick",
+            "Jump Kick",
+            "Rolling Kick",
+            "Meditate",
+            "Focus Energy",
+            "High Jump Kick"
+        ]
+    },
+    "hitmonchan": {
+        "types": [
+            "Fighting"
+        ],
+        "base_stats": {
+            "hp": 50,
+            "attack": 105,
+            "defense": 79,
+            "sp_atk": 35,
+            "sp_def": 110,
+            "speed": 76
+        },
+        "moves": [
+            "Comet Punch",
+            "Mega Punch",
+            "Fire Punch",
+            "Ice Punch",
+            "Thunder Punch",
+            "Counter",
+            "Agility"
+        ]
+    },
+    "lickitung": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 55,
+            "defense": 75,
+            "sp_atk": 60,
+            "sp_def": 75,
+            "speed": 30
+        },
+        "moves": [
+            "Slam",
+            "Stomp",
+            "Wrap",
+            "Supersonic",
+            "Disable",
+            "Screech",
+            "Defense Curl"
+        ]
+    },
+    "koffing": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 65,
+            "defense": 95,
+            "sp_atk": 60,
+            "sp_def": 45,
+            "speed": 35
+        },
+        "moves": [
+            "Tackle",
+            "Smokescreen",
+            "Haze",
+            "Self Destruct",
+            "Smog",
+            "Sludge",
+            "Explosion"
+        ]
+    },
+    "weezing": {
+        "types": [
+            "Poison"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 120,
+            "sp_atk": 85,
+            "sp_def": 70,
+            "speed": 60
+        },
+        "moves": [
+            "Tackle",
+            "Smokescreen",
+            "Haze",
+            "Self Destruct",
+            "Smog",
+            "Sludge",
+            "Explosion"
+        ]
+    },
+    "rhyhorn": {
+        "types": [
+            "Ground",
+            "Rock"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 85,
+            "defense": 95,
+            "sp_atk": 30,
+            "sp_def": 30,
+            "speed": 25
+        },
+        "moves": [
+            "Stomp",
+            "Horn Attack",
+            "Fury Attack",
+            "Horn Drill",
+            "Take Down",
+            "Tail Whip",
+            "Leer"
+        ]
+    },
+    "rhydon": {
+        "types": [
+            "Ground",
+            "Rock"
+        ],
+        "base_stats": {
+            "hp": 105,
+            "attack": 130,
+            "defense": 120,
+            "sp_atk": 45,
+            "sp_def": 45,
+            "speed": 40
+        },
+        "moves": [
+            "Stomp",
+            "Horn Attack",
+            "Fury Attack",
+            "Horn Drill",
+            "Take Down",
+            "Tail Whip",
+            "Leer"
+        ]
+    },
+    "chansey": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 250,
+            "attack": 5,
+            "defense": 5,
+            "sp_atk": 35,
+            "sp_def": 105,
+            "speed": 50
+        },
+        "moves": [
+            "Pound",
+            "Double Slap",
+            "Double Edge",
+            "Tail Whip",
+            "Growl",
+            "Sing",
+            "Minimize",
+            "Defense Curl",
+            "Light Screen"
+        ]
+    },
+    "tangela": {
+        "types": [
+            "Grass"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 55,
+            "defense": 115,
+            "sp_atk": 100,
+            "sp_def": 40,
+            "speed": 60
+        },
+        "moves": [
+            "Bind",
+            "Slam",
+            "Vine Whip",
+            "Absorb",
+            "Growth",
+            "Poison Powder",
+            "Stun Spore",
+            "Sleep Powder",
+            "Constrict"
+        ]
+    },
+    "kangaskhan": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 105,
+            "attack": 95,
+            "defense": 80,
+            "sp_atk": 40,
+            "sp_def": 80,
+            "speed": 90
+        },
+        "moves": [
+            "Comet Punch",
+            "Mega Punch",
+            "Tail Whip",
+            "Leer",
+            "Bite",
+            "Rage",
+            "Dizzy Punch"
+        ]
+    },
+    "horsea": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 30,
+            "attack": 40,
+            "defense": 70,
+            "sp_atk": 70,
+            "sp_def": 25,
+            "speed": 60
+        },
+        "moves": [
+            "Leer",
+            "Water Gun",
+            "Hydro Pump",
+            "Agility",
+            "Smokescreen",
+            "Bubble"
+        ]
+    },
+    "seadra": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 65,
+            "defense": 95,
+            "sp_atk": 95,
+            "sp_def": 45,
+            "speed": 85
+        },
+        "moves": [
+            "Leer",
+            "Water Gun",
+            "Hydro Pump",
+            "Agility",
+            "Smokescreen",
+            "Bubble"
+        ]
+    },
+    "goldeen": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 45,
+            "attack": 67,
+            "defense": 60,
+            "sp_atk": 35,
+            "sp_def": 50,
+            "speed": 63
+        },
+        "moves": [
+            "Horn Attack",
+            "Fury Attack",
+            "Horn Drill",
+            "Tail Whip",
+            "Supersonic",
+            "Peck",
+            "Agility",
+            "Waterfall"
+        ]
+    },
+    "seaking": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 92,
+            "defense": 65,
+            "sp_atk": 65,
+            "sp_def": 80,
+            "speed": 68
+        },
+        "moves": [
+            "Horn Attack",
+            "Fury Attack",
+            "Horn Drill",
+            "Tail Whip",
+            "Supersonic",
+            "Peck",
+            "Agility",
+            "Waterfall"
+        ]
+    },
+    "staryu": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 30,
+            "attack": 45,
+            "defense": 55,
+            "sp_atk": 70,
+            "sp_def": 55,
+            "speed": 85
+        },
+        "moves": [
+            "Tackle",
+            "Water Gun",
+            "Hydro Pump",
+            "Recover",
+            "Harden",
+            "Minimize",
+            "Light Screen",
+            "Swift"
+        ]
+    },
+    "starmie": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 75,
+            "defense": 85,
+            "sp_atk": 100,
+            "sp_def": 85,
+            "speed": 115
+        },
+        "moves": [
+            "Tackle",
+            "Water Gun",
+            "Harden"
+        ]
+    },
+    "mr-mime": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "base_stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 65,
+            "sp_atk": 100,
+            "sp_def": 120,
+            "speed": 90
+        },
+        "moves": [
+            "Double Slap",
+            "Confusion",
+            "Meditate",
+            "Barrier",
+            "Light Screen",
+            "Substitute"
+        ]
+    },
+    "scyther": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 70,
+            "attack": 110,
+            "defense": 80,
+            "sp_atk": 55,
+            "sp_def": 80,
+            "speed": 105
+        },
+        "moves": [
+            "Swords Dance",
+            "Wing Attack",
+            "Leer",
+            "Agility",
+            "Quick Attack",
+            "Double Team",
+            "Focus Energy",
+            "Slash"
+        ]
+    },
+    "jynx": {
+        "types": [
+            "Ice",
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 50,
+            "defense": 35,
+            "sp_atk": 115,
+            "sp_def": 95,
+            "speed": 95
+        },
+        "moves": [
+            "Pound",
+            "Double Slap",
+            "Ice Punch",
+            "Body Slam",
+            "Thrash",
+            "Blizzard",
+            "Lick",
+            "Lovely Kiss"
+        ]
+    },
+    "electabuzz": {
+        "types": [
+            "Electric"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 83,
+            "defense": 57,
+            "sp_atk": 95,
+            "sp_def": 85,
+            "speed": 105
+        },
+        "moves": [
+            "Thunder Punch",
+            "Leer",
+            "Thunder Shock",
+            "Thunder",
+            "Quick Attack",
+            "Screech",
+            "Light Screen"
+        ]
+    },
+    "magmar": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 95,
+            "defense": 57,
+            "sp_atk": 100,
+            "sp_def": 85,
+            "speed": 93
+        },
+        "moves": [
+            "Fire Punch",
+            "Leer",
+            "Ember",
+            "Flamethrower",
+            "Smokescreen",
+            "Confuse Ray",
+            "Smog"
+        ]
+    },
+    "pinsir": {
+        "types": [
+            "Bug"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 125,
+            "defense": 100,
+            "sp_atk": 55,
+            "sp_def": 70,
+            "speed": 85
+        },
+        "moves": [
+            "Vice Grip",
+            "Guillotine",
+            "Swords Dance",
+            "Bind",
+            "Seismic Toss",
+            "Harden",
+            "Focus Energy",
+            "Slash"
+        ]
+    },
+    "tauros": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 75,
+            "attack": 100,
+            "defense": 95,
+            "sp_atk": 40,
+            "sp_def": 70,
+            "speed": 110
+        },
+        "moves": [
+            "Stomp",
+            "Tackle",
+            "Take Down",
+            "Tail Whip",
+            "Leer",
+            "Rage"
+        ]
+    },
+    "magikarp": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 20,
+            "attack": 10,
+            "defense": 55,
+            "sp_atk": 15,
+            "sp_def": 20,
+            "speed": 80
+        },
+        "moves": [
+            "Tackle",
+            "Splash"
+        ]
+    },
+    "gyarados": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 95,
+            "attack": 125,
+            "defense": 79,
+            "sp_atk": 60,
+            "sp_def": 100,
+            "speed": 81
+        },
+        "moves": [
+            "Tackle",
+            "Leer",
+            "Bite",
+            "Hydro Pump",
+            "Hyper Beam",
+            "Dragon Rage"
+        ]
+    },
+    "lapras": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "base_stats": {
+            "hp": 130,
+            "attack": 85,
+            "defense": 80,
+            "sp_atk": 85,
+            "sp_def": 95,
+            "speed": 60
+        },
+        "moves": [
+            "Body Slam",
+            "Growl",
+            "Sing",
+            "Mist",
+            "Water Gun",
+            "Hydro Pump",
+            "Ice Beam",
+            "Confuse Ray"
+        ]
+    },
+    "ditto": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 48,
+            "attack": 48,
+            "defense": 48,
+            "sp_atk": 48,
+            "sp_def": 48,
+            "speed": 48
+        },
+        "moves": [
+            "Transform"
+        ]
+    },
+    "eevee": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 55,
+            "attack": 55,
+            "defense": 50,
+            "sp_atk": 45,
+            "sp_def": 65,
+            "speed": 55
+        },
+        "moves": [
+            "Sand Attack",
+            "Tackle",
+            "Take Down",
+            "Tail Whip",
+            "Bite",
+            "Growl",
+            "Quick Attack",
+            "Focus Energy"
+        ]
+    },
+    "vaporeon": {
+        "types": [
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 130,
+            "attack": 65,
+            "defense": 60,
+            "sp_atk": 110,
+            "sp_def": 95,
+            "speed": 65
+        },
+        "moves": [
+            "Sand Attack",
+            "Tackle",
+            "Tail Whip",
+            "Bite",
+            "Mist",
+            "Water Gun",
+            "Hydro Pump",
+            "Aurora Beam",
+            "Quick Attack",
+            "Haze"
+        ]
+    },
+    "jolteon": {
+        "types": [
+            "Electric"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 65,
+            "defense": 60,
+            "sp_atk": 110,
+            "sp_def": 95,
+            "speed": 130
+        },
+        "moves": [
+            "Double Kick",
+            "Sand Attack",
+            "Tackle",
+            "Tail Whip",
+            "Pin Missile",
+            "Thunder Shock",
+            "Thunder Wave",
+            "Thunder",
+            "Agility",
+            "Quick Attack"
+        ]
+    },
+    "flareon": {
+        "types": [
+            "Fire"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 130,
+            "defense": 60,
+            "sp_atk": 95,
+            "sp_def": 110,
+            "speed": 65
+        },
+        "moves": [
+            "Sand Attack",
+            "Tackle",
+            "Tail Whip",
+            "Leer",
+            "Bite",
+            "Ember",
+            "Flamethrower",
+            "Fire Spin",
+            "Quick Attack",
+            "Rage"
+        ]
+    },
+    "porygon": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 65,
+            "attack": 60,
+            "defense": 70,
+            "sp_atk": 85,
+            "sp_def": 75,
+            "speed": 40
+        },
+        "moves": [
+            "Tackle",
+            "Psybeam",
+            "Agility",
+            "Recover",
+            "Sharpen",
+            "Conversion",
+            "Tri Attack"
+        ]
+    },
+    "omanyte": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 35,
+            "attack": 40,
+            "defense": 100,
+            "sp_atk": 90,
+            "sp_def": 55,
+            "speed": 35
+        },
+        "moves": [
+            "Horn Attack",
+            "Leer",
+            "Water Gun",
+            "Hydro Pump",
+            "Withdraw",
+            "Spike Cannon"
+        ]
+    },
+    "omastar": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 70,
+            "attack": 60,
+            "defense": 125,
+            "sp_atk": 115,
+            "sp_def": 70,
+            "speed": 55
+        },
+        "moves": [
+            "Horn Attack",
+            "Leer",
+            "Water Gun",
+            "Hydro Pump",
+            "Withdraw",
+            "Spike Cannon"
+        ]
+    },
+    "kabuto": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 30,
+            "attack": 80,
+            "defense": 90,
+            "sp_atk": 55,
+            "sp_def": 45,
+            "speed": 55
+        },
+        "moves": [
+            "Scratch",
+            "Leer",
+            "Hydro Pump",
+            "Absorb",
+            "Harden",
+            "Slash"
+        ]
+    },
+    "kabutops": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "base_stats": {
+            "hp": 60,
+            "attack": 115,
+            "defense": 105,
+            "sp_atk": 65,
+            "sp_def": 70,
+            "speed": 80
+        },
+        "moves": [
+            "Scratch",
+            "Leer",
+            "Hydro Pump",
+            "Absorb",
+            "Harden",
+            "Slash"
+        ]
+    },
+    "aerodactyl": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 80,
+            "attack": 105,
+            "defense": 65,
+            "sp_atk": 60,
+            "sp_def": 75,
+            "speed": 130
+        },
+        "moves": [
+            "Wing Attack",
+            "Take Down",
+            "Bite",
+            "Supersonic",
+            "Hyper Beam",
+            "Agility"
+        ]
+    },
+    "snorlax": {
+        "types": [
+            "Normal"
+        ],
+        "base_stats": {
+            "hp": 160,
+            "attack": 110,
+            "defense": 65,
+            "sp_atk": 65,
+            "sp_def": 110,
+            "speed": 30
+        },
+        "moves": [
+            "Headbutt",
+            "Body Slam",
+            "Double Edge",
+            "Hyper Beam",
+            "Harden",
+            "Amnesia",
+            "Rest"
+        ]
+    },
+    "articuno": {
+        "types": [
+            "Ice",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 85,
+            "defense": 100,
+            "sp_atk": 95,
+            "sp_def": 125,
+            "speed": 85
+        },
+        "moves": [
+            "Mist",
+            "Ice Beam",
+            "Blizzard",
+            "Peck",
+            "Agility"
+        ]
+    },
+    "zapdos": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 90,
+            "defense": 85,
+            "sp_atk": 125,
+            "sp_def": 90,
+            "speed": 100
+        },
+        "moves": [
+            "Drill Peck",
+            "Thunder Shock",
+            "Thunder",
+            "Agility",
+            "Light Screen"
+        ]
+    },
+    "moltres": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 90,
+            "attack": 100,
+            "defense": 90,
+            "sp_atk": 125,
+            "sp_def": 85,
+            "speed": 90
+        },
+        "moves": [
+            "Leer",
+            "Peck",
+            "Fire Spin",
+            "Agility",
+            "Sky Attack"
+        ]
+    },
+    "dratini": {
+        "types": [
+            "Dragon"
+        ],
+        "base_stats": {
+            "hp": 41,
+            "attack": 64,
+            "defense": 45,
+            "sp_atk": 50,
+            "sp_def": 50,
+            "speed": 50
+        },
+        "moves": [
+            "Slam",
+            "Wrap",
+            "Leer",
+            "Hyper Beam",
+            "Dragon Rage",
+            "Thunder Wave",
+            "Agility"
+        ]
+    },
+    "dragonair": {
+        "types": [
+            "Dragon"
+        ],
+        "base_stats": {
+            "hp": 61,
+            "attack": 84,
+            "defense": 65,
+            "sp_atk": 70,
+            "sp_def": 70,
+            "speed": 70
+        },
+        "moves": [
+            "Slam",
+            "Wrap",
+            "Leer",
+            "Hyper Beam",
+            "Dragon Rage",
+            "Thunder Wave",
+            "Agility"
+        ]
+    },
+    "dragonite": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "base_stats": {
+            "hp": 91,
+            "attack": 134,
+            "defense": 95,
+            "sp_atk": 100,
+            "sp_def": 100,
+            "speed": 80
+        },
+        "moves": [
+            "Slam",
+            "Wrap",
+            "Leer",
+            "Hyper Beam",
+            "Dragon Rage",
+            "Thunder Wave",
+            "Agility"
+        ]
+    },
+    "mewtwo": {
+        "types": [
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 106,
+            "attack": 110,
+            "defense": 90,
+            "sp_atk": 154,
+            "sp_def": 90,
+            "speed": 130
+        },
+        "moves": [
+            "Disable",
+            "Mist",
+            "Confusion",
+            "Psychic",
+            "Recover",
+            "Barrier",
+            "Swift",
+            "Amnesia"
+        ]
+    },
+    "mew": {
+        "types": [
+            "Psychic"
+        ],
+        "base_stats": {
+            "hp": 100,
+            "attack": 100,
+            "defense": 100,
+            "sp_atk": 100,
+            "sp_def": 100,
+            "speed": 100
+        },
+        "moves": [
+            "Pound",
+            "Mega Punch",
+            "Psychic",
+            "Metronome",
+            "Transform"
+        ]
+    }
+}

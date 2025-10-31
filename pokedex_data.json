@@ -1,0 +1,4239 @@
+{
+  "bulbasaur": {
+    "number": 1,
+    "name": "Bulbasaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Seed Pokémon",
+    "height": "0.7 m",
+    "weight": "6.9 kg",
+    "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
+    "abilities": [
+      "Overgrow",
+      "Chlorophyll"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 49,
+      "sp_atk": 65,
+      "sp_def": 65,
+      "speed": 45
+    },
+    "evolution": "Bulbasaur → Ivysaur → Venusaur",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+  },
+  "ivysaur": {
+    "number": 2,
+    "name": "Ivysaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Seed Pokémon",
+    "height": "1.0 m",
+    "weight": "13.0 kg",
+    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+    "abilities": [
+      "Overgrow",
+      "Chlorophyll"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 63,
+      "sp_atk": 80,
+      "sp_def": 80,
+      "speed": 60
+    },
+    "evolution": "Bulbasaur → Ivysaur → Venusaur",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+  },
+  "venusaur": {
+    "number": 3,
+    "name": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Seed Pokémon",
+    "height": "2.0 m",
+    "weight": "100.0 kg",
+    "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "abilities": [
+      "Overgrow",
+      "Chlorophyll"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 83,
+      "sp_atk": 100,
+      "sp_def": 100,
+      "speed": 80
+    },
+    "evolution": "Bulbasaur → Ivysaur → Venusaur",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+  },
+  "charmander": {
+    "number": 4,
+    "name": "Charmander",
+    "types": [
+      "Fire"
+    ],
+    "category": "Lizard Pokémon",
+    "height": "0.6 m",
+    "weight": "8.5 kg",
+    "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+    "abilities": [
+      "Blaze",
+      "Solar Power"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "sp_atk": 60,
+      "sp_def": 50,
+      "speed": 65
+    },
+    "evolution": "Charmander → Charmeleon → Charizard",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+  },
+  "charmeleon": {
+    "number": 5,
+    "name": "Charmeleon",
+    "types": [
+      "Fire"
+    ],
+    "category": "Flame Pokémon",
+    "height": "1.1 m",
+    "weight": "19.0 kg",
+    "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+    "abilities": [
+      "Blaze",
+      "Solar Power"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "sp_atk": 80,
+      "sp_def": 65,
+      "speed": 80
+    },
+    "evolution": "Charmander → Charmeleon → Charizard",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
+  },
+  "charizard": {
+    "number": 6,
+    "name": "Charizard",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "category": "Flame Pokémon",
+    "height": "1.7 m",
+    "weight": "90.5 kg",
+    "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "abilities": [
+      "Blaze",
+      "Solar Power"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "sp_atk": 109,
+      "sp_def": 85,
+      "speed": 100
+    },
+    "evolution": "Charmander → Charmeleon → Charizard",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+  },
+  "squirtle": {
+    "number": 7,
+    "name": "Squirtle",
+    "types": [
+      "Water"
+    ],
+    "category": "Tiny Turtle Pokémon",
+    "height": "0.5 m",
+    "weight": "9.0 kg",
+    "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+    "abilities": [
+      "Torrent",
+      "Rain Dish"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 44,
+      "attack": 48,
+      "defense": 65,
+      "sp_atk": 50,
+      "sp_def": 64,
+      "speed": 43
+    },
+    "evolution": "Squirtle → Wartortle → Blastoise",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+  },
+  "wartortle": {
+    "number": 8,
+    "name": "Wartortle",
+    "types": [
+      "Water"
+    ],
+    "category": "Turtle Pokémon",
+    "height": "1.0 m",
+    "weight": "22.5 kg",
+    "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+    "abilities": [
+      "Torrent",
+      "Rain Dish"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "sp_atk": 65,
+      "sp_def": 80,
+      "speed": 58
+    },
+    "evolution": "Squirtle → Wartortle → Blastoise",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
+  },
+  "blastoise": {
+    "number": 9,
+    "name": "Blastoise",
+    "types": [
+      "Water"
+    ],
+    "category": "Shellfish Pokémon",
+    "height": "1.6 m",
+    "weight": "85.5 kg",
+    "description": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
+    "abilities": [
+      "Torrent",
+      "Rain Dish"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "sp_atk": 85,
+      "sp_def": 105,
+      "speed": 78
+    },
+    "evolution": "Squirtle → Wartortle → Blastoise",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+  },
+  "caterpie": {
+    "number": 10,
+    "name": "Caterpie",
+    "types": [
+      "Bug"
+    ],
+    "category": "Worm Pokémon",
+    "height": "0.3 m",
+    "weight": "2.9 kg",
+    "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+    "abilities": [
+      "Shield Dust",
+      "Run Away"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "sp_atk": 20,
+      "sp_def": 20,
+      "speed": 45
+    },
+    "evolution": "Caterpie → Metapod → Butterfree",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
+  },
+  "metapod": {
+    "number": 11,
+    "name": "Metapod",
+    "types": [
+      "Bug"
+    ],
+    "category": "Cocoon Pokémon",
+    "height": "0.7 m",
+    "weight": "9.9 kg",
+    "description": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 20,
+      "defense": 55,
+      "sp_atk": 25,
+      "sp_def": 25,
+      "speed": 30
+    },
+    "evolution": "Caterpie → Metapod → Butterfree",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
+  },
+  "butterfree": {
+    "number": 12,
+    "name": "Butterfree",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "category": "Butterfly Pokémon",
+    "height": "1.1 m",
+    "weight": "32.0 kg",
+    "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+    "abilities": [
+      "Compound Eyes",
+      "Tinted Lens"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 50,
+      "sp_atk": 90,
+      "sp_def": 80,
+      "speed": 70
+    },
+    "evolution": "Caterpie → Metapod → Butterfree",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
+  },
+  "weedle": {
+    "number": 13,
+    "name": "Weedle",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "category": "Hairy Bug Pokémon",
+    "height": "0.3 m",
+    "weight": "3.2 kg",
+    "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
+    "abilities": [
+      "Shield Dust",
+      "Run Away"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "sp_atk": 20,
+      "sp_def": 20,
+      "speed": 50
+    },
+    "evolution": "Weedle → Kakuna → Beedrill",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png"
+  },
+  "kakuna": {
+    "number": 14,
+    "name": "Kakuna",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "category": "Cocoon Pokémon",
+    "height": "0.6 m",
+    "weight": "10.0 kg",
+    "description": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
+    "abilities": [
+      "Shed Skin"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 45,
+      "attack": 25,
+      "defense": 50,
+      "sp_atk": 25,
+      "sp_def": 25,
+      "speed": 35
+    },
+    "evolution": "Weedle → Kakuna → Beedrill",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png"
+  },
+  "beedrill": {
+    "number": 15,
+    "name": "Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "category": "Poison Bee Pokémon",
+    "height": "1.0 m",
+    "weight": "29.5 kg",
+    "description": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
+    "abilities": [
+      "Swarm",
+      "Sniper"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 40,
+      "sp_atk": 45,
+      "sp_def": 80,
+      "speed": 75
+    },
+    "evolution": "Weedle → Kakuna → Beedrill",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png"
+  },
+  "pidgey": {
+    "number": 16,
+    "name": "Pidgey",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Tiny Bird Pokémon",
+    "height": "0.3 m",
+    "weight": "1.8 kg",
+    "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet",
+      "Big Pecks"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 40,
+      "sp_atk": 35,
+      "sp_def": 35,
+      "speed": 56
+    },
+    "evolution": "Pidgey → Pidgeotto → Pidgeot",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png"
+  },
+  "pidgeotto": {
+    "number": 17,
+    "name": "Pidgeotto",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Bird Pokémon",
+    "height": "1.1 m",
+    "weight": "30.0 kg",
+    "description": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet",
+      "Big Pecks"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 63,
+      "attack": 60,
+      "defense": 55,
+      "sp_atk": 50,
+      "sp_def": 50,
+      "speed": 71
+    },
+    "evolution": "Pidgey → Pidgeotto → Pidgeot",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
+  },
+  "pidgeot": {
+    "number": 18,
+    "name": "Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Bird Pokémon",
+    "height": "1.5 m",
+    "weight": "39.5 kg",
+    "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
+    "abilities": [
+      "Keen Eye",
+      "Tangled Feet",
+      "Big Pecks"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 83,
+      "attack": 80,
+      "defense": 75,
+      "sp_atk": 70,
+      "sp_def": 70,
+      "speed": 101
+    },
+    "evolution": "Pidgey → Pidgeotto → Pidgeot",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png"
+  },
+  "rattata": {
+    "number": 19,
+    "name": "Rattata",
+    "types": [
+      "Normal"
+    ],
+    "category": "Mouse Pokémon",
+    "height": "0.3 m",
+    "weight": "3.5 kg",
+    "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+    "abilities": [
+      "Run Away",
+      "Guts",
+      "Hustle"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "sp_atk": 25,
+      "sp_def": 35,
+      "speed": 72
+    },
+    "evolution": "Rattata → Raticate",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
+  },
+  "raticate": {
+    "number": 20,
+    "name": "Raticate",
+    "types": [
+      "Normal"
+    ],
+    "category": "Mouse Pokémon",
+    "height": "0.7 m",
+    "weight": "18.5 kg",
+    "description": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
+    "abilities": [
+      "Run Away",
+      "Guts",
+      "Hustle"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "sp_atk": 50,
+      "sp_def": 70,
+      "speed": 97
+    },
+    "evolution": "Rattata → Raticate",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png"
+  },
+  "spearow": {
+    "number": 21,
+    "name": "Spearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Tiny Bird Pokémon",
+    "height": "0.3 m",
+    "weight": "2.0 kg",
+    "description": "It flaps its small wings busily to fly. Using its beak, it searches in grass for prey.",
+    "abilities": [
+      "Keen Eye",
+      "Sniper"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 60,
+      "defense": 30,
+      "sp_atk": 31,
+      "sp_def": 31,
+      "speed": 70
+    },
+    "evolution": "Spearow → Fearow",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+  },
+  "fearow": {
+    "number": 22,
+    "name": "Fearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Beak Pokémon",
+    "height": "1.2 m",
+    "weight": "38.0 kg",
+    "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+    "abilities": [
+      "Keen Eye",
+      "Sniper"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 65,
+      "sp_atk": 61,
+      "sp_def": 61,
+      "speed": 100
+    },
+    "evolution": "Spearow → Fearow",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png"
+  },
+  "ekans": {
+    "number": 23,
+    "name": "Ekans",
+    "types": [
+      "Poison"
+    ],
+    "category": "Snake Pokémon",
+    "height": "2.0 m",
+    "weight": "6.9 kg",
+    "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
+    "abilities": [
+      "Intimidate",
+      "Shed Skin",
+      "Unnerve"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 35,
+      "attack": 60,
+      "defense": 44,
+      "sp_atk": 40,
+      "sp_def": 54,
+      "speed": 55
+    },
+    "evolution": "Ekans → Arbok",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
+  },
+  "arbok": {
+    "number": 24,
+    "name": "Arbok",
+    "types": [
+      "Poison"
+    ],
+    "category": "Cobra Pokémon",
+    "height": "3.5 m",
+    "weight": "65.0 kg",
+    "description": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
+    "abilities": [
+      "Intimidate",
+      "Shed Skin",
+      "Unnerve"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 69,
+      "sp_atk": 65,
+      "sp_def": 79,
+      "speed": 80
+    },
+    "evolution": "Ekans → Arbok",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png"
+  },
+  "pikachu": {
+    "number": 25,
+    "name": "Pikachu",
+    "types": [
+      "Electric"
+    ],
+    "category": "Mouse Pokémon",
+    "height": "0.4 m",
+    "weight": "6.0 kg",
+    "description": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
+    "abilities": [
+      "Static",
+      "Lightning Rod"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "sp_atk": 50,
+      "sp_def": 50,
+      "speed": 90
+    },
+    "evolution": "Pichu → Pikachu → Raichu",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+  },
+  "raichu": {
+    "number": 26,
+    "name": "Raichu",
+    "types": [
+      "Electric"
+    ],
+    "category": "Mouse Pokémon",
+    "height": "0.8 m",
+    "weight": "30.0 kg",
+    "description": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+    "abilities": [
+      "Static",
+      "Lightning Rod"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "sp_atk": 90,
+      "sp_def": 80,
+      "speed": 110
+    },
+    "evolution": "Pichu → Pikachu → Raichu",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+  },
+  "sandshrew": {
+    "number": 27,
+    "name": "Sandshrew",
+    "types": [
+      "Ground"
+    ],
+    "category": "Mouse Pokémon",
+    "height": "0.6 m",
+    "weight": "12.0 kg",
+    "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+    "abilities": [
+      "Sand Veil",
+      "Sand Rush"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 85,
+      "sp_atk": 20,
+      "sp_def": 30,
+      "speed": 40
+    },
+    "evolution": "Sandshrew → Sandslash",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png"
+  },
+  "sandslash": {
+    "number": 28,
+    "name": "Sandslash",
+    "types": [
+      "Ground"
+    ],
+    "category": "Mouse Pokémon",
+    "height": "1.0 m",
+    "weight": "29.5 kg",
+    "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+    "abilities": [
+      "Sand Veil",
+      "Sand Rush"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 110,
+      "sp_atk": 45,
+      "sp_def": 55,
+      "speed": 65
+    },
+    "evolution": "Sandshrew → Sandslash",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png"
+  },
+  "nidoran-f": {
+    "number": 29,
+    "name": "Nidoran-f",
+    "types": [
+      "Poison"
+    ],
+    "category": "Poison Pin Pokémon",
+    "height": "0.4 m",
+    "weight": "7.0 kg",
+    "description": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
+    "abilities": [
+      "Poison Point",
+      "Rivalry",
+      "Hustle"
+    ],
+    "gender_ratio": "♂ 0.0% / ♀ 100.0%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 47,
+      "defense": 52,
+      "sp_atk": 40,
+      "sp_def": 40,
+      "speed": 41
+    },
+    "evolution": "Nidoran-f → Nidorina → Nidoqueen",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+  },
+  "nidorina": {
+    "number": 30,
+    "name": "Nidorina",
+    "types": [
+      "Poison"
+    ],
+    "category": "Poison Pin Pokémon",
+    "height": "0.8 m",
+    "weight": "20.0 kg",
+    "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
+    "abilities": [
+      "Poison Point",
+      "Rivalry",
+      "Hustle"
+    ],
+    "gender_ratio": "♂ 0.0% / ♀ 100.0%",
+    "base_stats": {
+      "hp": 70,
+      "attack": 62,
+      "defense": 67,
+      "sp_atk": 55,
+      "sp_def": 55,
+      "speed": 56
+    },
+    "evolution": "Nidoran-f → Nidorina → Nidoqueen",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+  },
+  "nidoqueen": {
+    "number": 31,
+    "name": "Nidoqueen",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "category": "Drill Pokémon",
+    "height": "1.3 m",
+    "weight": "60.0 kg",
+    "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+    "abilities": [
+      "Poison Point",
+      "Rivalry",
+      "Sheer Force"
+    ],
+    "gender_ratio": "♂ 0.0% / ♀ 100.0%",
+    "base_stats": {
+      "hp": 90,
+      "attack": 92,
+      "defense": 87,
+      "sp_atk": 75,
+      "sp_def": 85,
+      "speed": 76
+    },
+    "evolution": "Nidoran-f → Nidorina → Nidoqueen",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
+  },
+  "nidoran-m": {
+    "number": 32,
+    "name": "Nidoran-m",
+    "types": [
+      "Poison"
+    ],
+    "category": "Poison Pin Pokémon",
+    "height": "0.5 m",
+    "weight": "9.0 kg",
+    "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
+    "abilities": [
+      "Poison Point",
+      "Rivalry",
+      "Hustle"
+    ],
+    "gender_ratio": "♂ 100.0% / ♀ 0.0%",
+    "base_stats": {
+      "hp": 46,
+      "attack": 57,
+      "defense": 40,
+      "sp_atk": 40,
+      "sp_def": 40,
+      "speed": 50
+    },
+    "evolution": "Nidoran-m → Nidorino → Nidoking",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png"
+  },
+  "nidorino": {
+    "number": 33,
+    "name": "Nidorino",
+    "types": [
+      "Poison"
+    ],
+    "category": "Poison Pin Pokémon",
+    "height": "0.9 m",
+    "weight": "19.5 kg",
+    "description": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
+    "abilities": [
+      "Poison Point",
+      "Rivalry",
+      "Hustle"
+    ],
+    "gender_ratio": "♂ 100.0% / ♀ 0.0%",
+    "base_stats": {
+      "hp": 61,
+      "attack": 72,
+      "defense": 57,
+      "sp_atk": 55,
+      "sp_def": 55,
+      "speed": 65
+    },
+    "evolution": "Nidoran-m → Nidorino → Nidoking",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png"
+  },
+  "nidoking": {
+    "number": 34,
+    "name": "Nidoking",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "category": "Drill Pokémon",
+    "height": "1.4 m",
+    "weight": "62.0 kg",
+    "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
+    "abilities": [
+      "Poison Point",
+      "Rivalry",
+      "Sheer Force"
+    ],
+    "gender_ratio": "♂ 100.0% / ♀ 0.0%",
+    "base_stats": {
+      "hp": 81,
+      "attack": 102,
+      "defense": 77,
+      "sp_atk": 85,
+      "sp_def": 75,
+      "speed": 85
+    },
+    "evolution": "Nidoran-m → Nidorino → Nidoking",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+  },
+  "clefairy": {
+    "number": 35,
+    "name": "Clefairy",
+    "types": [
+      "Fairy"
+    ],
+    "category": "Fairy Pokémon",
+    "height": "0.6 m",
+    "weight": "7.5 kg",
+    "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
+    "abilities": [
+      "Cute Charm",
+      "Magic Guard",
+      "Friend Guard"
+    ],
+    "gender_ratio": "♂ 25.0% / ♀ 75.0%",
+    "base_stats": {
+      "hp": 70,
+      "attack": 45,
+      "defense": 48,
+      "sp_atk": 60,
+      "sp_def": 65,
+      "speed": 35
+    },
+    "evolution": "Cleffa → Clefairy → Clefable",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png"
+  },
+  "clefable": {
+    "number": 36,
+    "name": "Clefable",
+    "types": [
+      "Fairy"
+    ],
+    "category": "Fairy Pokémon",
+    "height": "1.3 m",
+    "weight": "40.0 kg",
+    "description": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
+    "abilities": [
+      "Cute Charm",
+      "Magic Guard",
+      "Unaware"
+    ],
+    "gender_ratio": "♂ 25.0% / ♀ 75.0%",
+    "base_stats": {
+      "hp": 95,
+      "attack": 70,
+      "defense": 73,
+      "sp_atk": 95,
+      "sp_def": 90,
+      "speed": 60
+    },
+    "evolution": "Cleffa → Clefairy → Clefable",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+  },
+  "vulpix": {
+    "number": 37,
+    "name": "Vulpix",
+    "types": [
+      "Fire"
+    ],
+    "category": "Fox Pokémon",
+    "height": "0.6 m",
+    "weight": "9.9 kg",
+    "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
+    "abilities": [
+      "Flash Fire",
+      "Drought"
+    ],
+    "gender_ratio": "♂ 25.0% / ♀ 75.0%",
+    "base_stats": {
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "sp_atk": 50,
+      "sp_def": 65,
+      "speed": 65
+    },
+    "evolution": "Vulpix → Ninetales",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png"
+  },
+  "ninetales": {
+    "number": 38,
+    "name": "Ninetales",
+    "types": [
+      "Fire"
+    ],
+    "category": "Fox Pokémon",
+    "height": "1.1 m",
+    "weight": "19.9 kg",
+    "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
+    "abilities": [
+      "Flash Fire",
+      "Drought"
+    ],
+    "gender_ratio": "♂ 25.0% / ♀ 75.0%",
+    "base_stats": {
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "sp_atk": 81,
+      "sp_def": 100,
+      "speed": 100
+    },
+    "evolution": "Vulpix → Ninetales",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
+  },
+  "jigglypuff": {
+    "number": 39,
+    "name": "Jigglypuff",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "category": "Balloon Pokémon",
+    "height": "0.5 m",
+    "weight": "5.5 kg",
+    "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
+    "abilities": [
+      "Cute Charm",
+      "Competitive",
+      "Friend Guard"
+    ],
+    "gender_ratio": "♂ 25.0% / ♀ 75.0%",
+    "base_stats": {
+      "hp": 115,
+      "attack": 45,
+      "defense": 20,
+      "sp_atk": 45,
+      "sp_def": 25,
+      "speed": 20
+    },
+    "evolution": "Igglybuff → Jigglypuff → Wigglytuff",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png"
+  },
+  "wigglytuff": {
+    "number": 40,
+    "name": "Wigglytuff",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "category": "Balloon Pokémon",
+    "height": "1.0 m",
+    "weight": "12.0 kg",
+    "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
+    "abilities": [
+      "Cute Charm",
+      "Competitive",
+      "Frisk"
+    ],
+    "gender_ratio": "♂ 25.0% / ♀ 75.0%",
+    "base_stats": {
+      "hp": 140,
+      "attack": 70,
+      "defense": 45,
+      "sp_atk": 85,
+      "sp_def": 50,
+      "speed": 45
+    },
+    "evolution": "Igglybuff → Jigglypuff → Wigglytuff",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png"
+  },
+  "zubat": {
+    "number": 41,
+    "name": "Zubat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "category": "Bat Pokémon",
+    "height": "0.8 m",
+    "weight": "7.5 kg",
+    "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
+    "abilities": [
+      "Inner Focus",
+      "Infiltrator"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "sp_atk": 30,
+      "sp_def": 40,
+      "speed": 55
+    },
+    "evolution": "Zubat → Golbat → Crobat",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png"
+  },
+  "golbat": {
+    "number": 42,
+    "name": "Golbat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "category": "Bat Pokémon",
+    "height": "1.6 m",
+    "weight": "55.0 kg",
+    "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
+    "abilities": [
+      "Inner Focus",
+      "Infiltrator"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 70,
+      "sp_atk": 65,
+      "sp_def": 75,
+      "speed": 90
+    },
+    "evolution": "Zubat → Golbat → Crobat",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png"
+  },
+  "oddish": {
+    "number": 43,
+    "name": "Oddish",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Weed Pokémon",
+    "height": "0.5 m",
+    "weight": "5.4 kg",
+    "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
+    "abilities": [
+      "Chlorophyll",
+      "Run Away"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 55,
+      "sp_atk": 75,
+      "sp_def": 65,
+      "speed": 30
+    },
+    "evolution": "Oddish → Gloom → Vileplume",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png"
+  },
+  "gloom": {
+    "number": 44,
+    "name": "Gloom",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Weed Pokémon",
+    "height": "0.8 m",
+    "weight": "8.6 kg",
+    "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
+    "abilities": [
+      "Chlorophyll",
+      "Stench"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 70,
+      "sp_atk": 85,
+      "sp_def": 75,
+      "speed": 40
+    },
+    "evolution": "Oddish → Gloom → Vileplume",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
+  },
+  "vileplume": {
+    "number": 45,
+    "name": "Vileplume",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Flower Pokémon",
+    "height": "1.2 m",
+    "weight": "18.6 kg",
+    "description": "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
+    "abilities": [
+      "Chlorophyll",
+      "Effect Spore"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 85,
+      "sp_atk": 110,
+      "sp_def": 90,
+      "speed": 50
+    },
+    "evolution": "Oddish → Gloom → Vileplume",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
+  },
+  "paras": {
+    "number": 46,
+    "name": "Paras",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "category": "Mushroom Pokémon",
+    "height": "0.3 m",
+    "weight": "5.4 kg",
+    "description": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host.",
+    "abilities": [
+      "Effect Spore",
+      "Dry Skin",
+      "Damp"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 35,
+      "attack": 70,
+      "defense": 55,
+      "sp_atk": 45,
+      "sp_def": 55,
+      "speed": 25
+    },
+    "evolution": "Paras → Parasect",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
+  },
+  "parasect": {
+    "number": 47,
+    "name": "Parasect",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "category": "Mushroom Pokémon",
+    "height": "1.0 m",
+    "weight": "29.5 kg",
+    "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
+    "abilities": [
+      "Effect Spore",
+      "Dry Skin",
+      "Damp"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "sp_atk": 60,
+      "sp_def": 80,
+      "speed": 30
+    },
+    "evolution": "Paras → Parasect",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png"
+  },
+  "venonat": {
+    "number": 48,
+    "name": "Venonat",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "category": "Insect Pokémon",
+    "height": "1.0 m",
+    "weight": "30.0 kg",
+    "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
+    "abilities": [
+      "Compound Eyes",
+      "Tinted Lens",
+      "Run Away"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 55,
+      "defense": 50,
+      "sp_atk": 40,
+      "sp_def": 55,
+      "speed": 45
+    },
+    "evolution": "Venonat → Venomoth",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png"
+  },
+  "venomoth": {
+    "number": 49,
+    "name": "Venomoth",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "category": "Poison Moth Pokémon",
+    "height": "1.5 m",
+    "weight": "12.5 kg",
+    "description": "The dustlike scales covering its wings are color-coded to indicate the kinds of poison it has.",
+    "abilities": [
+      "Shield Dust",
+      "Tinted Lens",
+      "Wonder Skin"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 70,
+      "attack": 65,
+      "defense": 60,
+      "sp_atk": 90,
+      "sp_def": 75,
+      "speed": 90
+    },
+    "evolution": "Venonat → Venomoth",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png"
+  },
+  "diglett": {
+    "number": 50,
+    "name": "Diglett",
+    "types": [
+      "Ground"
+    ],
+    "category": "Mole Pokémon",
+    "height": "0.2 m",
+    "weight": "0.8 kg",
+    "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
+    "abilities": [
+      "Sand Veil",
+      "Arena Trap",
+      "Sand Force"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 10,
+      "attack": 55,
+      "defense": 25,
+      "sp_atk": 35,
+      "sp_def": 45,
+      "speed": 95
+    },
+    "evolution": "Diglett → Dugtrio",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png"
+  },
+  "dugtrio": {
+    "number": 51,
+    "name": "Dugtrio",
+    "types": [
+      "Ground"
+    ],
+    "category": "Mole Pokémon",
+    "height": "0.7 m",
+    "weight": "33.3 kg",
+    "description": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
+    "abilities": [
+      "Sand Veil",
+      "Arena Trap",
+      "Sand Force"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "sp_atk": 50,
+      "sp_def": 70,
+      "speed": 120
+    },
+    "evolution": "Diglett → Dugtrio",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png"
+  },
+  "meowth": {
+    "number": 52,
+    "name": "Meowth",
+    "types": [
+      "Normal"
+    ],
+    "category": "Scratch Cat Pokémon",
+    "height": "0.4 m",
+    "weight": "4.2 kg",
+    "description": "It washes its face regularly to keep the coin on its forehead spotless. It doesn’t get along with Galarian Meowth.",
+    "abilities": [
+      "Pickup",
+      "Technician",
+      "Unnerve"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "sp_atk": 40,
+      "sp_def": 40,
+      "speed": 90
+    },
+    "evolution": "Meowth → Persian",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
+  },
+  "persian": {
+    "number": 53,
+    "name": "Persian",
+    "types": [
+      "Normal"
+    ],
+    "category": "Classy Cat Pokémon",
+    "height": "1.0 m",
+    "weight": "32.0 kg",
+    "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
+    "abilities": [
+      "Limber",
+      "Technician",
+      "Unnerve"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 70,
+      "defense": 60,
+      "sp_atk": 65,
+      "sp_def": 65,
+      "speed": 115
+    },
+    "evolution": "Meowth → Persian",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png"
+  },
+  "psyduck": {
+    "number": 54,
+    "name": "Psyduck",
+    "types": [
+      "Water"
+    ],
+    "category": "Duck Pokémon",
+    "height": "0.8 m",
+    "weight": "19.6 kg",
+    "description": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
+    "abilities": [
+      "Damp",
+      "Cloud Nine",
+      "Swift Swim"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "sp_atk": 65,
+      "sp_def": 50,
+      "speed": 55
+    },
+    "evolution": "Psyduck → Golduck",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png"
+  },
+  "golduck": {
+    "number": 55,
+    "name": "Golduck",
+    "types": [
+      "Water"
+    ],
+    "category": "Duck Pokémon",
+    "height": "1.7 m",
+    "weight": "76.6 kg",
+    "description": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
+    "abilities": [
+      "Damp",
+      "Cloud Nine",
+      "Swift Swim"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 78,
+      "sp_atk": 95,
+      "sp_def": 80,
+      "speed": 85
+    },
+    "evolution": "Psyduck → Golduck",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png"
+  },
+  "mankey": {
+    "number": 56,
+    "name": "Mankey",
+    "types": [
+      "Fighting"
+    ],
+    "category": "Pig Monkey Pokémon",
+    "height": "0.5 m",
+    "weight": "28.0 kg",
+    "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
+    "abilities": [
+      "Vital Spirit",
+      "Anger Point",
+      "Defiant"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 35,
+      "sp_atk": 35,
+      "sp_def": 45,
+      "speed": 70
+    },
+    "evolution": "Mankey → Primeape → Annihilape",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png"
+  },
+  "primeape": {
+    "number": 57,
+    "name": "Primeape",
+    "types": [
+      "Fighting"
+    ],
+    "category": "Pig Monkey Pokémon",
+    "height": "1.0 m",
+    "weight": "32.0 kg",
+    "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
+    "abilities": [
+      "Vital Spirit",
+      "Anger Point",
+      "Defiant"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 105,
+      "defense": 60,
+      "sp_atk": 60,
+      "sp_def": 70,
+      "speed": 95
+    },
+    "evolution": "Mankey → Primeape → Annihilape",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png"
+  },
+  "growlithe": {
+    "number": 58,
+    "name": "Growlithe",
+    "types": [
+      "Fire"
+    ],
+    "category": "Puppy Pokémon",
+    "height": "0.7 m",
+    "weight": "19.0 kg",
+    "description": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
+    "abilities": [
+      "Intimidate",
+      "Flash Fire",
+      "Justified"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 45,
+      "sp_atk": 70,
+      "sp_def": 50,
+      "speed": 60
+    },
+    "evolution": "Growlithe → Arcanine",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+  },
+  "arcanine": {
+    "number": 59,
+    "name": "Arcanine",
+    "types": [
+      "Fire"
+    ],
+    "category": "Legendary Pokémon",
+    "height": "1.9 m",
+    "weight": "155.0 kg",
+    "description": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
+    "abilities": [
+      "Intimidate",
+      "Flash Fire",
+      "Justified"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 90,
+      "attack": 110,
+      "defense": 80,
+      "sp_atk": 100,
+      "sp_def": 80,
+      "speed": 95
+    },
+    "evolution": "Growlithe → Arcanine",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
+  },
+  "poliwag": {
+    "number": 60,
+    "name": "Poliwag",
+    "types": [
+      "Water"
+    ],
+    "category": "Tadpole Pokémon",
+    "height": "0.6 m",
+    "weight": "12.4 kg",
+    "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
+    "abilities": [
+      "Water Absorb",
+      "Damp",
+      "Swift Swim"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 40,
+      "sp_atk": 40,
+      "sp_def": 40,
+      "speed": 90
+    },
+    "evolution": "Poliwag → Poliwhirl → Poliwrath",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png"
+  },
+  "poliwhirl": {
+    "number": 61,
+    "name": "Poliwhirl",
+    "types": [
+      "Water"
+    ],
+    "category": "Tadpole Pokémon",
+    "height": "1.0 m",
+    "weight": "20.0 kg",
+    "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
+    "abilities": [
+      "Water Absorb",
+      "Damp",
+      "Swift Swim"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 65,
+      "sp_atk": 50,
+      "sp_def": 50,
+      "speed": 90
+    },
+    "evolution": "Poliwag → Poliwhirl → Poliwrath",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png"
+  },
+  "poliwrath": {
+    "number": 62,
+    "name": "Poliwrath",
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "category": "Tadpole Pokémon",
+    "height": "1.3 m",
+    "weight": "54.0 kg",
+    "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
+    "abilities": [
+      "Water Absorb",
+      "Damp",
+      "Swift Swim"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 90,
+      "attack": 95,
+      "defense": 95,
+      "sp_atk": 70,
+      "sp_def": 90,
+      "speed": 70
+    },
+    "evolution": "Poliwag → Poliwhirl → Poliwrath",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png"
+  },
+  "abra": {
+    "number": 63,
+    "name": "Abra",
+    "types": [
+      "Psychic"
+    ],
+    "category": "Psi Pokémon",
+    "height": "0.9 m",
+    "weight": "19.5 kg",
+    "description": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety.",
+    "abilities": [
+      "Synchronize",
+      "Inner Focus",
+      "Magic Guard"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "sp_atk": 105,
+      "sp_def": 55,
+      "speed": 90
+    },
+    "evolution": "Abra → Kadabra → Alakazam",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png"
+  },
+  "kadabra": {
+    "number": 64,
+    "name": "Kadabra",
+    "types": [
+      "Psychic"
+    ],
+    "category": "Psi Pokémon",
+    "height": "1.3 m",
+    "weight": "56.5 kg",
+    "description": "It emits special alpha waves from its body that induce headaches just by being close by.",
+    "abilities": [
+      "Synchronize",
+      "Inner Focus",
+      "Magic Guard"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "sp_atk": 120,
+      "sp_def": 70,
+      "speed": 105
+    },
+    "evolution": "Abra → Kadabra → Alakazam",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png"
+  },
+  "alakazam": {
+    "number": 65,
+    "name": "Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "category": "Psi Pokémon",
+    "height": "1.5 m",
+    "weight": "48.0 kg",
+    "description": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000.",
+    "abilities": [
+      "Synchronize",
+      "Inner Focus",
+      "Magic Guard"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 50,
+      "defense": 45,
+      "sp_atk": 135,
+      "sp_def": 95,
+      "speed": 120
+    },
+    "evolution": "Abra → Kadabra → Alakazam",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+  },
+  "machop": {
+    "number": 66,
+    "name": "Machop",
+    "types": [
+      "Fighting"
+    ],
+    "category": "Superpower Pokémon",
+    "height": "0.8 m",
+    "weight": "19.5 kg",
+    "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
+    "abilities": [
+      "Guts",
+      "No Guard",
+      "Steadfast"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "sp_atk": 35,
+      "sp_def": 35,
+      "speed": 35
+    },
+    "evolution": "Machop → Machoke → Machamp",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png"
+  },
+  "machoke": {
+    "number": 67,
+    "name": "Machoke",
+    "types": [
+      "Fighting"
+    ],
+    "category": "Superpower Pokémon",
+    "height": "1.5 m",
+    "weight": "70.5 kg",
+    "description": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
+    "abilities": [
+      "Guts",
+      "No Guard",
+      "Steadfast"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "sp_atk": 50,
+      "sp_def": 60,
+      "speed": 45
+    },
+    "evolution": "Machop → Machoke → Machamp",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png"
+  },
+  "machamp": {
+    "number": 68,
+    "name": "Machamp",
+    "types": [
+      "Fighting"
+    ],
+    "category": "Superpower Pokémon",
+    "height": "1.6 m",
+    "weight": "130.0 kg",
+    "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
+    "abilities": [
+      "Guts",
+      "No Guard",
+      "Steadfast"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 80,
+      "sp_atk": 65,
+      "sp_def": 85,
+      "speed": 55
+    },
+    "evolution": "Machop → Machoke → Machamp",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png"
+  },
+  "bellsprout": {
+    "number": 69,
+    "name": "Bellsprout",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Flower Pokémon",
+    "height": "0.7 m",
+    "weight": "4.0 kg",
+    "description": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
+    "abilities": [
+      "Chlorophyll",
+      "Gluttony"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 35,
+      "sp_atk": 70,
+      "sp_def": 30,
+      "speed": 40
+    },
+    "evolution": "Bellsprout → Weepinbell → Victreebel",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png"
+  },
+  "weepinbell": {
+    "number": 70,
+    "name": "Weepinbell",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Flycatcher Pokémon",
+    "height": "1.0 m",
+    "weight": "6.4 kg",
+    "description": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
+    "abilities": [
+      "Chlorophyll",
+      "Gluttony"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 50,
+      "sp_atk": 85,
+      "sp_def": 45,
+      "speed": 55
+    },
+    "evolution": "Bellsprout → Weepinbell → Victreebel",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png"
+  },
+  "victreebel": {
+    "number": 71,
+    "name": "Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "category": "Flycatcher Pokémon",
+    "height": "1.7 m",
+    "weight": "15.5 kg",
+    "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
+    "abilities": [
+      "Chlorophyll",
+      "Gluttony"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "sp_atk": 100,
+      "sp_def": 70,
+      "speed": 70
+    },
+    "evolution": "Bellsprout → Weepinbell → Victreebel",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+  },
+  "tentacool": {
+    "number": 72,
+    "name": "Tentacool",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "category": "Jellyfish Pokémon",
+    "height": "0.9 m",
+    "weight": "45.5 kg",
+    "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
+    "abilities": [
+      "Clear Body",
+      "Liquid Ooze",
+      "Rain Dish"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 40,
+      "defense": 35,
+      "sp_atk": 50,
+      "sp_def": 100,
+      "speed": 70
+    },
+    "evolution": "Tentacool → Tentacruel",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png"
+  },
+  "tentacruel": {
+    "number": 73,
+    "name": "Tentacruel",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "category": "Jellyfish Pokémon",
+    "height": "1.6 m",
+    "weight": "55.0 kg",
+    "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
+    "abilities": [
+      "Clear Body",
+      "Liquid Ooze",
+      "Rain Dish"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "sp_atk": 80,
+      "sp_def": 120,
+      "speed": 100
+    },
+    "evolution": "Tentacool → Tentacruel",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png"
+  },
+  "geodude": {
+    "number": 74,
+    "name": "Geodude",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "category": "Rock Pokémon",
+    "height": "0.4 m",
+    "weight": "20.0 kg",
+    "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
+    "abilities": [
+      "Rock Head",
+      "Sturdy",
+      "Sand Veil"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "sp_atk": 30,
+      "sp_def": 30,
+      "speed": 20
+    },
+    "evolution": "Geodude → Graveler → Golem",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png"
+  },
+  "graveler": {
+    "number": 75,
+    "name": "Graveler",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "category": "Rock Pokémon",
+    "height": "1.0 m",
+    "weight": "105.0 kg",
+    "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
+    "abilities": [
+      "Rock Head",
+      "Sturdy",
+      "Sand Veil"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "sp_atk": 45,
+      "sp_def": 45,
+      "speed": 35
+    },
+    "evolution": "Geodude → Graveler → Golem",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png"
+  },
+  "golem": {
+    "number": 76,
+    "name": "Golem",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "category": "Megaton Pokémon",
+    "height": "1.4 m",
+    "weight": "300.0 kg",
+    "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
+    "abilities": [
+      "Rock Head",
+      "Sturdy",
+      "Sand Veil"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "sp_atk": 55,
+      "sp_def": 65,
+      "speed": 45
+    },
+    "evolution": "Geodude → Graveler → Golem",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png"
+  },
+  "ponyta": {
+    "number": 77,
+    "name": "Ponyta",
+    "types": [
+      "Fire"
+    ],
+    "category": "Fire Horse Pokémon",
+    "height": "1.0 m",
+    "weight": "30.0 kg",
+    "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
+    "abilities": [
+      "Run Away",
+      "Flash Fire",
+      "Flame Body"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "sp_atk": 65,
+      "sp_def": 65,
+      "speed": 90
+    },
+    "evolution": "Ponyta → Rapidash",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
+  },
+  "rapidash": {
+    "number": 78,
+    "name": "Rapidash",
+    "types": [
+      "Fire"
+    ],
+    "category": "Fire Horse Pokémon",
+    "height": "1.7 m",
+    "weight": "95.0 kg",
+    "description": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
+    "abilities": [
+      "Run Away",
+      "Flash Fire",
+      "Flame Body"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "sp_atk": 80,
+      "sp_def": 80,
+      "speed": 105
+    },
+    "evolution": "Ponyta → Rapidash",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
+  },
+  "slowpoke": {
+    "number": 79,
+    "name": "Slowpoke",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "category": "Dopey Pokémon",
+    "height": "1.2 m",
+    "weight": "36.0 kg",
+    "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
+    "abilities": [
+      "Oblivious",
+      "Own Tempo",
+      "Regenerator"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "sp_atk": 40,
+      "sp_def": 40,
+      "speed": 15
+    },
+    "evolution": "Slowpoke → Slowbro",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png"
+  },
+  "slowbro": {
+    "number": 80,
+    "name": "Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "category": "Hermit Crab Pokémon",
+    "height": "1.6 m",
+    "weight": "78.5 kg",
+    "description": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
+    "abilities": [
+      "Oblivious",
+      "Own Tempo",
+      "Regenerator"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 95,
+      "attack": 75,
+      "defense": 110,
+      "sp_atk": 100,
+      "sp_def": 80,
+      "speed": 30
+    },
+    "evolution": "Slowpoke → Slowbro",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png"
+  },
+  "magnemite": {
+    "number": 81,
+    "name": "Magnemite",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "category": "Magnet Pokémon",
+    "height": "0.3 m",
+    "weight": "6.0 kg",
+    "description": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
+    "abilities": [
+      "Magnet Pull",
+      "Sturdy",
+      "Analytic"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 25,
+      "attack": 35,
+      "defense": 70,
+      "sp_atk": 95,
+      "sp_def": 55,
+      "speed": 45
+    },
+    "evolution": "Magnemite → Magneton → Magnezone",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png"
+  },
+  "magneton": {
+    "number": 82,
+    "name": "Magneton",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "category": "Magnet Pokémon",
+    "height": "1.0 m",
+    "weight": "60.0 kg",
+    "description": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.",
+    "abilities": [
+      "Magnet Pull",
+      "Sturdy",
+      "Analytic"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 50,
+      "attack": 60,
+      "defense": 95,
+      "sp_atk": 120,
+      "sp_def": 70,
+      "speed": 70
+    },
+    "evolution": "Magnemite → Magneton → Magnezone",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png"
+  },
+  "farfetchd": {
+    "number": 83,
+    "name": "Farfetchd",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Wild Duck Pokémon",
+    "height": "0.8 m",
+    "weight": "15.0 kg",
+    "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
+    "abilities": [
+      "Keen Eye",
+      "Inner Focus",
+      "Defiant"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 52,
+      "attack": 90,
+      "defense": 55,
+      "sp_atk": 58,
+      "sp_def": 62,
+      "speed": 60
+    },
+    "evolution": "Farfetchd → Sirfetchd",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
+  },
+  "doduo": {
+    "number": 84,
+    "name": "Doduo",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Twin Bird Pokémon",
+    "height": "1.4 m",
+    "weight": "39.2 kg",
+    "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
+    "abilities": [
+      "Run Away",
+      "Early Bird",
+      "Tangled Feet"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 35,
+      "attack": 85,
+      "defense": 45,
+      "sp_atk": 35,
+      "sp_def": 35,
+      "speed": 75
+    },
+    "evolution": "Doduo → Dodrio",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png"
+  },
+  "dodrio": {
+    "number": 85,
+    "name": "Dodrio",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "category": "Triple Bird Pokémon",
+    "height": "1.8 m",
+    "weight": "85.2 kg",
+    "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
+    "abilities": [
+      "Run Away",
+      "Early Bird",
+      "Tangled Feet"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 110,
+      "defense": 70,
+      "sp_atk": 60,
+      "sp_def": 60,
+      "speed": 110
+    },
+    "evolution": "Doduo → Dodrio",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png"
+  },
+  "seel": {
+    "number": 86,
+    "name": "Seel",
+    "types": [
+      "Water"
+    ],
+    "category": "Sea Lion Pokémon",
+    "height": "1.1 m",
+    "weight": "90.0 kg",
+    "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
+    "abilities": [
+      "Thick Fat",
+      "Hydration",
+      "Ice Body"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 45,
+      "defense": 55,
+      "sp_atk": 45,
+      "sp_def": 70,
+      "speed": 45
+    },
+    "evolution": "Seel → Dewgong",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png"
+  },
+  "dewgong": {
+    "number": 87,
+    "name": "Dewgong",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "category": "Sea Lion Pokémon",
+    "height": "1.7 m",
+    "weight": "120.0 kg",
+    "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
+    "abilities": [
+      "Thick Fat",
+      "Hydration",
+      "Ice Body"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 90,
+      "attack": 70,
+      "defense": 80,
+      "sp_atk": 70,
+      "sp_def": 95,
+      "speed": 70
+    },
+    "evolution": "Seel → Dewgong",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png"
+  },
+  "grimer": {
+    "number": 88,
+    "name": "Grimer",
+    "types": [
+      "Poison"
+    ],
+    "category": "Sludge Pokémon",
+    "height": "0.9 m",
+    "weight": "30.0 kg",
+    "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
+    "abilities": [
+      "Stench",
+      "Sticky Hold",
+      "Poison Touch"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "sp_atk": 40,
+      "sp_def": 50,
+      "speed": 25
+    },
+    "evolution": "Grimer → Muk",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png"
+  },
+  "muk": {
+    "number": 89,
+    "name": "Muk",
+    "types": [
+      "Poison"
+    ],
+    "category": "Sludge Pokémon",
+    "height": "1.2 m",
+    "weight": "30.0 kg",
+    "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
+    "abilities": [
+      "Stench",
+      "Sticky Hold",
+      "Poison Touch"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "sp_atk": 65,
+      "sp_def": 100,
+      "speed": 50
+    },
+    "evolution": "Grimer → Muk",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png"
+  },
+  "shellder": {
+    "number": 90,
+    "name": "Shellder",
+    "types": [
+      "Water"
+    ],
+    "category": "Bivalve Pokémon",
+    "height": "0.3 m",
+    "weight": "4.0 kg",
+    "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
+    "abilities": [
+      "Shell Armor",
+      "Skill Link",
+      "Overcoat"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 30,
+      "attack": 65,
+      "defense": 100,
+      "sp_atk": 45,
+      "sp_def": 25,
+      "speed": 40
+    },
+    "evolution": "Shellder → Cloyster",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png"
+  },
+  "cloyster": {
+    "number": 91,
+    "name": "Cloyster",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "category": "Bivalve Pokémon",
+    "height": "1.5 m",
+    "weight": "132.5 kg",
+    "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
+    "abilities": [
+      "Shell Armor",
+      "Skill Link",
+      "Overcoat"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 95,
+      "defense": 180,
+      "sp_atk": 85,
+      "sp_def": 45,
+      "speed": 70
+    },
+    "evolution": "Shellder → Cloyster",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png"
+  },
+  "gastly": {
+    "number": 92,
+    "name": "Gastly",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "category": "Gas Pokémon",
+    "height": "1.3 m",
+    "weight": "0.1 kg",
+    "description": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
+    "abilities": [
+      "Levitate"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "sp_atk": 100,
+      "sp_def": 35,
+      "speed": 80
+    },
+    "evolution": "Gastly → Haunter → Gengar",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+  },
+  "haunter": {
+    "number": 93,
+    "name": "Haunter",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "category": "Gas Pokémon",
+    "height": "1.6 m",
+    "weight": "0.1 kg",
+    "description": "Because of its ability to slip through block walls, it is said to be from an­ other dimension.",
+    "abilities": [
+      "Levitate"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 45,
+      "sp_atk": 115,
+      "sp_def": 55,
+      "speed": 95
+    },
+    "evolution": "Gastly → Haunter → Gengar",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png"
+  },
+  "gengar": {
+    "number": 94,
+    "name": "Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "category": "Shadow Pokémon",
+    "height": "1.5 m",
+    "weight": "40.5 kg",
+    "description": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
+    "abilities": [
+      "Cursed Body"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "sp_atk": 130,
+      "sp_def": 75,
+      "speed": 110
+    },
+    "evolution": "Gastly → Haunter → Gengar",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+  },
+  "onix": {
+    "number": 95,
+    "name": "Onix",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "category": "Rock Snake Pokémon",
+    "height": "8.8 m",
+    "weight": "210.0 kg",
+    "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
+    "abilities": [
+      "Rock Head",
+      "Sturdy",
+      "Weak Armor"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "sp_atk": 30,
+      "sp_def": 45,
+      "speed": 70
+    },
+    "evolution": "Onix → Steelix",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png"
+  },
+  "drowzee": {
+    "number": 96,
+    "name": "Drowzee",
+    "types": [
+      "Psychic"
+    ],
+    "category": "Hypnosis Pokémon",
+    "height": "1.0 m",
+    "weight": "32.4 kg",
+    "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
+    "abilities": [
+      "Insomnia",
+      "Forewarn",
+      "Inner Focus"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 48,
+      "defense": 45,
+      "sp_atk": 43,
+      "sp_def": 90,
+      "speed": 42
+    },
+    "evolution": "Drowzee → Hypno",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png"
+  },
+  "hypno": {
+    "number": 97,
+    "name": "Hypno",
+    "types": [
+      "Psychic"
+    ],
+    "category": "Hypnosis Pokémon",
+    "height": "1.6 m",
+    "weight": "75.6 kg",
+    "description": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
+    "abilities": [
+      "Insomnia",
+      "Forewarn",
+      "Inner Focus"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 85,
+      "attack": 73,
+      "defense": 70,
+      "sp_atk": 73,
+      "sp_def": 115,
+      "speed": 67
+    },
+    "evolution": "Drowzee → Hypno",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png"
+  },
+  "krabby": {
+    "number": 98,
+    "name": "Krabby",
+    "types": [
+      "Water"
+    ],
+    "category": "River Crab Pokémon",
+    "height": "0.4 m",
+    "weight": "6.5 kg",
+    "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
+    "abilities": [
+      "Hyper Cutter",
+      "Shell Armor",
+      "Sheer Force"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 30,
+      "attack": 105,
+      "defense": 90,
+      "sp_atk": 25,
+      "sp_def": 25,
+      "speed": 50
+    },
+    "evolution": "Krabby → Kingler",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png"
+  },
+  "kingler": {
+    "number": 99,
+    "name": "Kingler",
+    "types": [
+      "Water"
+    ],
+    "category": "Pincer Pokémon",
+    "height": "1.3 m",
+    "weight": "60.0 kg",
+    "description": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
+    "abilities": [
+      "Hyper Cutter",
+      "Shell Armor",
+      "Sheer Force"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 130,
+      "defense": 115,
+      "sp_atk": 50,
+      "sp_def": 50,
+      "speed": 75
+    },
+    "evolution": "Krabby → Kingler",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png"
+  },
+  "voltorb": {
+    "number": 100,
+    "name": "Voltorb",
+    "types": [
+      "Electric"
+    ],
+    "category": "Ball Pokémon",
+    "height": "0.5 m",
+    "weight": "10.4 kg",
+    "description": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
+    "abilities": [
+      "Soundproof",
+      "Static",
+      "Aftermath"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 50,
+      "sp_atk": 55,
+      "sp_def": 55,
+      "speed": 100
+    },
+    "evolution": "Voltorb → Electrode",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png"
+  },
+  "electrode": {
+    "number": 101,
+    "name": "Electrode",
+    "types": [
+      "Electric"
+    ],
+    "category": "Ball Pokémon",
+    "height": "1.2 m",
+    "weight": "66.6 kg",
+    "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
+    "abilities": [
+      "Soundproof",
+      "Static",
+      "Aftermath"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 70,
+      "sp_atk": 80,
+      "sp_def": 80,
+      "speed": 150
+    },
+    "evolution": "Voltorb → Electrode",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png"
+  },
+  "exeggcute": {
+    "number": 102,
+    "name": "Exeggcute",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "category": "Egg Pokémon",
+    "height": "0.4 m",
+    "weight": "2.5 kg",
+    "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
+    "abilities": [
+      "Chlorophyll",
+      "Harvest"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 40,
+      "defense": 80,
+      "sp_atk": 60,
+      "sp_def": 45,
+      "speed": 40
+    },
+    "evolution": "Exeggcute → Exeggutor",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png"
+  },
+  "exeggutor": {
+    "number": 103,
+    "name": "Exeggutor",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "category": "Coconut Pokémon",
+    "height": "2.0 m",
+    "weight": "120.0 kg",
+    "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
+    "abilities": [
+      "Chlorophyll",
+      "Harvest"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 95,
+      "attack": 95,
+      "defense": 85,
+      "sp_atk": 125,
+      "sp_def": 75,
+      "speed": 55
+    },
+    "evolution": "Exeggcute → Exeggutor",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png"
+  },
+  "cubone": {
+    "number": 104,
+    "name": "Cubone",
+    "types": [
+      "Ground"
+    ],
+    "category": "Lonely Pokémon",
+    "height": "0.4 m",
+    "weight": "6.5 kg",
+    "description": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
+    "abilities": [
+      "Rock Head",
+      "Lightning Rod",
+      "Battle Armor"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 95,
+      "sp_atk": 40,
+      "sp_def": 50,
+      "speed": 35
+    },
+    "evolution": "Cubone → Marowak",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png"
+  },
+  "marowak": {
+    "number": 105,
+    "name": "Marowak",
+    "types": [
+      "Ground"
+    ],
+    "category": "Bone Keeper Pokémon",
+    "height": "1.0 m",
+    "weight": "45.0 kg",
+    "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
+    "abilities": [
+      "Rock Head",
+      "Lightning Rod",
+      "Battle Armor"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "sp_atk": 50,
+      "sp_def": 80,
+      "speed": 45
+    },
+    "evolution": "Cubone → Marowak",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png"
+  },
+  "hitmonlee": {
+    "number": 106,
+    "name": "Hitmonlee",
+    "types": [
+      "Fighting"
+    ],
+    "category": "Kicking Pokémon",
+    "height": "1.5 m",
+    "weight": "49.8 kg",
+    "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
+    "abilities": [
+      "Limber",
+      "Reckless",
+      "Unburden"
+    ],
+    "gender_ratio": "♂ 100.0% / ♀ 0.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 120,
+      "defense": 53,
+      "sp_atk": 35,
+      "sp_def": 110,
+      "speed": 87
+    },
+    "evolution": "Tyrogue → Hitmonlee",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png"
+  },
+  "hitmonchan": {
+    "number": 107,
+    "name": "Hitmonchan",
+    "types": [
+      "Fighting"
+    ],
+    "category": "Punching Pokémon",
+    "height": "1.4 m",
+    "weight": "50.2 kg",
+    "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
+    "abilities": [
+      "Keen Eye",
+      "Iron Fist",
+      "Inner Focus"
+    ],
+    "gender_ratio": "♂ 100.0% / ♀ 0.0%",
+    "base_stats": {
+      "hp": 50,
+      "attack": 105,
+      "defense": 79,
+      "sp_atk": 35,
+      "sp_def": 110,
+      "speed": 76
+    },
+    "evolution": "Tyrogue → Hitmonlee",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png"
+  },
+  "lickitung": {
+    "number": 108,
+    "name": "Lickitung",
+    "types": [
+      "Normal"
+    ],
+    "category": "Licking Pokémon",
+    "height": "1.2 m",
+    "weight": "65.5 kg",
+    "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
+    "abilities": [
+      "Own Tempo",
+      "Oblivious",
+      "Cloud Nine"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 90,
+      "attack": 55,
+      "defense": 75,
+      "sp_atk": 60,
+      "sp_def": 75,
+      "speed": 30
+    },
+    "evolution": "Lickitung → Lickilicky",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png"
+  },
+  "koffing": {
+    "number": 109,
+    "name": "Koffing",
+    "types": [
+      "Poison"
+    ],
+    "category": "Poison Gas Pokémon",
+    "height": "0.6 m",
+    "weight": "1.0 kg",
+    "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
+    "abilities": [
+      "Levitate",
+      "Neutralizing Gas",
+      "Stench"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 65,
+      "defense": 95,
+      "sp_atk": 60,
+      "sp_def": 45,
+      "speed": 35
+    },
+    "evolution": "Koffing → Weezing",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png"
+  },
+  "weezing": {
+    "number": 110,
+    "name": "Weezing",
+    "types": [
+      "Poison"
+    ],
+    "category": "Poison Gas Pokémon",
+    "height": "1.2 m",
+    "weight": "9.5 kg",
+    "description": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.",
+    "abilities": [
+      "Levitate",
+      "Neutralizing Gas",
+      "Stench"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "sp_atk": 85,
+      "sp_def": 70,
+      "speed": 60
+    },
+    "evolution": "Koffing → Weezing",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png"
+  },
+  "rhyhorn": {
+    "number": 111,
+    "name": "Rhyhorn",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "category": "Spikes Pokémon",
+    "height": "1.0 m",
+    "weight": "115.0 kg",
+    "description": "A POKéMON with a one-track mind. Once it charges,  it won't stop running until it falls asleep.",
+    "abilities": [
+      "Lightning Rod",
+      "Rock Head",
+      "Reckless"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 85,
+      "defense": 95,
+      "sp_atk": 30,
+      "sp_def": 30,
+      "speed": 25
+    },
+    "evolution": "Rhyhorn → Rhydon → Rhyperior",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png"
+  },
+  "rhydon": {
+    "number": 112,
+    "name": "Rhydon",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "category": "Drill Pokémon",
+    "height": "1.9 m",
+    "weight": "120.0 kg",
+    "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
+    "abilities": [
+      "Lightning Rod",
+      "Rock Head",
+      "Reckless"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 105,
+      "attack": 130,
+      "defense": 120,
+      "sp_atk": 45,
+      "sp_def": 45,
+      "speed": 40
+    },
+    "evolution": "Rhyhorn → Rhydon → Rhyperior",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png"
+  },
+  "chansey": {
+    "number": 113,
+    "name": "Chansey",
+    "types": [
+      "Normal"
+    ],
+    "category": "Egg Pokémon",
+    "height": "1.1 m",
+    "weight": "34.6 kg",
+    "description": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
+    "abilities": [
+      "Natural Cure",
+      "Serene Grace",
+      "Healer"
+    ],
+    "gender_ratio": "♂ 0.0% / ♀ 100.0%",
+    "base_stats": {
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "sp_atk": 35,
+      "sp_def": 105,
+      "speed": 50
+    },
+    "evolution": "Happiny → Chansey → Blissey",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png"
+  },
+  "tangela": {
+    "number": 114,
+    "name": "Tangela",
+    "types": [
+      "Grass"
+    ],
+    "category": "Vine Pokémon",
+    "height": "1.0 m",
+    "weight": "35.0 kg",
+    "description": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks.",
+    "abilities": [
+      "Chlorophyll",
+      "Leaf Guard",
+      "Regenerator"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 55,
+      "defense": 115,
+      "sp_atk": 100,
+      "sp_def": 40,
+      "speed": 60
+    },
+    "evolution": "Tangela → Tangrowth",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png"
+  },
+  "kangaskhan": {
+    "number": 115,
+    "name": "Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "category": "Parent Pokémon",
+    "height": "2.2 m",
+    "weight": "80.0 kg",
+    "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
+    "abilities": [
+      "Early Bird",
+      "Scrappy",
+      "Inner Focus"
+    ],
+    "gender_ratio": "♂ 0.0% / ♀ 100.0%",
+    "base_stats": {
+      "hp": 105,
+      "attack": 95,
+      "defense": 80,
+      "sp_atk": 40,
+      "sp_def": 80,
+      "speed": 90
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
+  },
+  "horsea": {
+    "number": 116,
+    "name": "Horsea",
+    "types": [
+      "Water"
+    ],
+    "category": "Dragon Pokémon",
+    "height": "0.4 m",
+    "weight": "8.0 kg",
+    "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
+    "abilities": [
+      "Swift Swim",
+      "Sniper",
+      "Damp"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 30,
+      "attack": 40,
+      "defense": 70,
+      "sp_atk": 70,
+      "sp_def": 25,
+      "speed": 60
+    },
+    "evolution": "Horsea → Seadra → Kingdra",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png"
+  },
+  "seadra": {
+    "number": 117,
+    "name": "Seadra",
+    "types": [
+      "Water"
+    ],
+    "category": "Dragon Pokémon",
+    "height": "1.2 m",
+    "weight": "25.0 kg",
+    "description": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
+    "abilities": [
+      "Poison Point",
+      "Sniper",
+      "Damp"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 65,
+      "defense": 95,
+      "sp_atk": 95,
+      "sp_def": 45,
+      "speed": 85
+    },
+    "evolution": "Horsea → Seadra → Kingdra",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png"
+  },
+  "goldeen": {
+    "number": 118,
+    "name": "Goldeen",
+    "types": [
+      "Water"
+    ],
+    "category": "Goldfish Pokémon",
+    "height": "0.6 m",
+    "weight": "15.0 kg",
+    "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
+    "abilities": [
+      "Swift Swim",
+      "Water Veil",
+      "Lightning Rod"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 45,
+      "attack": 67,
+      "defense": 60,
+      "sp_atk": 35,
+      "sp_def": 50,
+      "speed": 63
+    },
+    "evolution": "Goldeen → Seaking",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
+  },
+  "seaking": {
+    "number": 119,
+    "name": "Seaking",
+    "types": [
+      "Water"
+    ],
+    "category": "Goldfish Pokémon",
+    "height": "1.3 m",
+    "weight": "39.0 kg",
+    "description": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
+    "abilities": [
+      "Swift Swim",
+      "Water Veil",
+      "Lightning Rod"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 92,
+      "defense": 65,
+      "sp_atk": 65,
+      "sp_def": 80,
+      "speed": 68
+    },
+    "evolution": "Goldeen → Seaking",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
+  },
+  "staryu": {
+    "number": 120,
+    "name": "Staryu",
+    "types": [
+      "Water"
+    ],
+    "category": "Star Shape Pokémon",
+    "height": "0.8 m",
+    "weight": "34.5 kg",
+    "description": "If its body is torn, it can grow back if the red core remains. The core flashes at midnight.",
+    "abilities": [
+      "Illuminate",
+      "Natural Cure",
+      "Analytic"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 30,
+      "attack": 45,
+      "defense": 55,
+      "sp_atk": 70,
+      "sp_def": 55,
+      "speed": 85
+    },
+    "evolution": "Staryu → Starmie",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
+  },
+  "starmie": {
+    "number": 121,
+    "name": "Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "category": "Mysterious Pokémon",
+    "height": "1.1 m",
+    "weight": "80.0 kg",
+    "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
+    "abilities": [
+      "Illuminate",
+      "Natural Cure",
+      "Analytic"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 60,
+      "attack": 75,
+      "defense": 85,
+      "sp_atk": 100,
+      "sp_def": 85,
+      "speed": 115
+    },
+    "evolution": "Staryu → Starmie",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
+  },
+  "mr-mime": {
+    "number": 122,
+    "name": "Mr-mime",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "category": "Barrier Pokémon",
+    "height": "1.3 m",
+    "weight": "54.5 kg",
+    "description": "If interrupted while it is miming, it will slap around the offender with its broad hands.",
+    "abilities": [
+      "Soundproof",
+      "Filter",
+      "Technician"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "sp_atk": 100,
+      "sp_def": 120,
+      "speed": 90
+    },
+    "evolution": "Mime-jr → Mr-mime → Mr-rime",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png"
+  },
+  "scyther": {
+    "number": 123,
+    "name": "Scyther",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "category": "Mantis Pokémon",
+    "height": "1.5 m",
+    "weight": "56.0 kg",
+    "description": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
+    "abilities": [
+      "Swarm",
+      "Technician",
+      "Steadfast"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "sp_atk": 55,
+      "sp_def": 80,
+      "speed": 105
+    },
+    "evolution": "Scyther → Scizor",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png"
+  },
+  "jynx": {
+    "number": 124,
+    "name": "Jynx",
+    "types": [
+      "Ice",
+      "Psychic"
+    ],
+    "category": "Human Shape Pokémon",
+    "height": "1.4 m",
+    "weight": "40.6 kg",
+    "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
+    "abilities": [
+      "Oblivious",
+      "Forewarn",
+      "Dry Skin"
+    ],
+    "gender_ratio": "♂ 0.0% / ♀ 100.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 50,
+      "defense": 35,
+      "sp_atk": 115,
+      "sp_def": 95,
+      "speed": 95
+    },
+    "evolution": "Smoochum → Jynx",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png"
+  },
+  "electabuzz": {
+    "number": 125,
+    "name": "Electabuzz",
+    "types": [
+      "Electric"
+    ],
+    "category": "Electric Pokémon",
+    "height": "1.1 m",
+    "weight": "30.0 kg",
+    "description": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
+    "abilities": [
+      "Static",
+      "Vital Spirit"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 83,
+      "defense": 57,
+      "sp_atk": 95,
+      "sp_def": 85,
+      "speed": 105
+    },
+    "evolution": "Elekid → Electabuzz → Electivire",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png"
+  },
+  "magmar": {
+    "number": 126,
+    "name": "Magmar",
+    "types": [
+      "Fire"
+    ],
+    "category": "Spitfire Pokémon",
+    "height": "1.3 m",
+    "weight": "44.5 kg",
+    "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+    "abilities": [
+      "Flame Body",
+      "Vital Spirit"
+    ],
+    "gender_ratio": "♂ 75.0% / ♀ 25.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 95,
+      "defense": 57,
+      "sp_atk": 100,
+      "sp_def": 85,
+      "speed": 93
+    },
+    "evolution": "Magby → Magmar → Magmortar",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png"
+  },
+  "pinsir": {
+    "number": 127,
+    "name": "Pinsir",
+    "types": [
+      "Bug"
+    ],
+    "category": "Stag Beetle Pokémon",
+    "height": "1.5 m",
+    "weight": "55.0 kg",
+    "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
+    "abilities": [
+      "Hyper Cutter",
+      "Mold Breaker",
+      "Moxie"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 125,
+      "defense": 100,
+      "sp_atk": 55,
+      "sp_def": 70,
+      "speed": 85
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png"
+  },
+  "tauros": {
+    "number": 128,
+    "name": "Tauros",
+    "types": [
+      "Normal"
+    ],
+    "category": "Wild Bull Pokémon",
+    "height": "1.4 m",
+    "weight": "88.4 kg",
+    "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
+    "abilities": [
+      "Intimidate",
+      "Anger Point",
+      "Sheer Force"
+    ],
+    "gender_ratio": "♂ 100.0% / ♀ 0.0%",
+    "base_stats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 95,
+      "sp_atk": 40,
+      "sp_def": 70,
+      "speed": 110
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png"
+  },
+  "magikarp": {
+    "number": 129,
+    "name": "Magikarp",
+    "types": [
+      "Water"
+    ],
+    "category": "Fish Pokémon",
+    "height": "0.9 m",
+    "weight": "10.0 kg",
+    "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
+    "abilities": [
+      "Swift Swim",
+      "Rattled"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "sp_atk": 15,
+      "sp_def": 20,
+      "speed": 80
+    },
+    "evolution": "Magikarp → Gyarados",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png"
+  },
+  "gyarados": {
+    "number": 130,
+    "name": "Gyarados",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "category": "Atrocious Pokémon",
+    "height": "6.5 m",
+    "weight": "235.0 kg",
+    "description": "Once it begins to rampage, a GYARADOS will burn everything down, even in a harsh storm.",
+    "abilities": [
+      "Intimidate",
+      "Moxie"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "sp_atk": 60,
+      "sp_def": 100,
+      "speed": 81
+    },
+    "evolution": "Magikarp → Gyarados",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+  },
+  "lapras": {
+    "number": 131,
+    "name": "Lapras",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "category": "Transport Pokémon",
+    "height": "2.5 m",
+    "weight": "220.0 kg",
+    "description": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water.",
+    "abilities": [
+      "Water Absorb",
+      "Shell Armor",
+      "Hydration"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 130,
+      "attack": 85,
+      "defense": 80,
+      "sp_atk": 85,
+      "sp_def": 95,
+      "speed": 60
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+  },
+  "ditto": {
+    "number": 132,
+    "name": "Ditto",
+    "types": [
+      "Normal"
+    ],
+    "category": "Transform Pokémon",
+    "height": "0.3 m",
+    "weight": "4.0 kg",
+    "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
+    "abilities": [
+      "Limber",
+      "Imposter"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 48,
+      "attack": 48,
+      "defense": 48,
+      "sp_atk": 48,
+      "sp_def": 48,
+      "speed": 48
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+  },
+  "eevee": {
+    "number": 133,
+    "name": "Eevee",
+    "types": [
+      "Normal"
+    ],
+    "category": "Evolution Pokémon",
+    "height": "0.3 m",
+    "weight": "6.5 kg",
+    "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
+    "abilities": [
+      "Run Away",
+      "Adaptability",
+      "Anticipation"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 50,
+      "sp_atk": 45,
+      "sp_def": 65,
+      "speed": 55
+    },
+    "evolution": "Eevee → Vaporeon",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
+  },
+  "vaporeon": {
+    "number": 134,
+    "name": "Vaporeon",
+    "types": [
+      "Water"
+    ],
+    "category": "Bubble Jet Pokémon",
+    "height": "1.0 m",
+    "weight": "29.0 kg",
+    "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
+    "abilities": [
+      "Water Absorb",
+      "Hydration"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 130,
+      "attack": 65,
+      "defense": 60,
+      "sp_atk": 110,
+      "sp_def": 95,
+      "speed": 65
+    },
+    "evolution": "Eevee → Vaporeon",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+  },
+  "jolteon": {
+    "number": 135,
+    "name": "Jolteon",
+    "types": [
+      "Electric"
+    ],
+    "category": "Lightning Pokémon",
+    "height": "0.8 m",
+    "weight": "24.5 kg",
+    "description": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.",
+    "abilities": [
+      "Volt Absorb",
+      "Quick Feet"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "sp_atk": 110,
+      "sp_def": 95,
+      "speed": 130
+    },
+    "evolution": "Eevee → Vaporeon",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
+  },
+  "flareon": {
+    "number": 136,
+    "name": "Flareon",
+    "types": [
+      "Fire"
+    ],
+    "category": "Flame Pokémon",
+    "height": "0.9 m",
+    "weight": "25.0 kg",
+    "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
+    "abilities": [
+      "Flash Fire",
+      "Guts"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 65,
+      "attack": 130,
+      "defense": 60,
+      "sp_atk": 95,
+      "sp_def": 110,
+      "speed": 65
+    },
+    "evolution": "Eevee → Vaporeon",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
+  },
+  "porygon": {
+    "number": 137,
+    "name": "Porygon",
+    "types": [
+      "Normal"
+    ],
+    "category": "Virtual Pokémon",
+    "height": "0.8 m",
+    "weight": "36.5 kg",
+    "description": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
+    "abilities": [
+      "Trace",
+      "Download",
+      "Analytic"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 65,
+      "attack": 60,
+      "defense": 70,
+      "sp_atk": 85,
+      "sp_def": 75,
+      "speed": 40
+    },
+    "evolution": "Porygon → Porygon2 → Porygon-z",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png"
+  },
+  "omanyte": {
+    "number": 138,
+    "name": "Omanyte",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "category": "Spiral Pokémon",
+    "height": "0.4 m",
+    "weight": "7.5 kg",
+    "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
+    "abilities": [
+      "Swift Swim",
+      "Shell Armor",
+      "Weak Armor"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 35,
+      "attack": 40,
+      "defense": 100,
+      "sp_atk": 90,
+      "sp_def": 55,
+      "speed": 35
+    },
+    "evolution": "Omanyte → Omastar",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png"
+  },
+  "omastar": {
+    "number": 139,
+    "name": "Omastar",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "category": "Spiral Pokémon",
+    "height": "1.0 m",
+    "weight": "35.0 kg",
+    "description": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
+    "abilities": [
+      "Swift Swim",
+      "Shell Armor",
+      "Weak Armor"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 125,
+      "sp_atk": 115,
+      "sp_def": 70,
+      "speed": 55
+    },
+    "evolution": "Omanyte → Omastar",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png"
+  },
+  "kabuto": {
+    "number": 140,
+    "name": "Kabuto",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "category": "Shellfish Pokémon",
+    "height": "0.5 m",
+    "weight": "11.5 kg",
+    "description": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago.",
+    "abilities": [
+      "Swift Swim",
+      "Battle Armor",
+      "Weak Armor"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 30,
+      "attack": 80,
+      "defense": 90,
+      "sp_atk": 55,
+      "sp_def": 45,
+      "speed": 55
+    },
+    "evolution": "Kabuto → Kabutops",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png"
+  },
+  "kabutops": {
+    "number": 141,
+    "name": "Kabutops",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "category": "Shellfish Pokémon",
+    "height": "1.3 m",
+    "weight": "40.5 kg",
+    "description": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids.",
+    "abilities": [
+      "Swift Swim",
+      "Battle Armor",
+      "Weak Armor"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 60,
+      "attack": 115,
+      "defense": 105,
+      "sp_atk": 65,
+      "sp_def": 70,
+      "speed": 80
+    },
+    "evolution": "Kabuto → Kabutops",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png"
+  },
+  "aerodactyl": {
+    "number": 142,
+    "name": "Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "category": "Fossil Pokémon",
+    "height": "1.8 m",
+    "weight": "59.0 kg",
+    "description": "A Pokémon that roamed the skies in the dinosaur era. Its teeth are like saw blades.",
+    "abilities": [
+      "Rock Head",
+      "Pressure",
+      "Unnerve"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "sp_atk": 60,
+      "sp_def": 75,
+      "speed": 130
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+  },
+  "snorlax": {
+    "number": 143,
+    "name": "Snorlax",
+    "types": [
+      "Normal"
+    ],
+    "category": "Sleeping Pokémon",
+    "height": "2.1 m",
+    "weight": "460.0 kg",
+    "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
+    "abilities": [
+      "Immunity",
+      "Thick Fat",
+      "Gluttony"
+    ],
+    "gender_ratio": "♂ 87.5% / ♀ 12.5%",
+    "base_stats": {
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "sp_atk": 65,
+      "sp_def": 110,
+      "speed": 30
+    },
+    "evolution": "Munchlax → Snorlax",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+  },
+  "articuno": {
+    "number": 144,
+    "name": "Articuno",
+    "types": [
+      "Ice",
+      "Flying"
+    ],
+    "category": "Freeze Pokémon",
+    "height": "1.7 m",
+    "weight": "55.4 kg",
+    "description": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
+    "abilities": [
+      "Pressure",
+      "Snow Cloak"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 90,
+      "attack": 85,
+      "defense": 100,
+      "sp_atk": 95,
+      "sp_def": 125,
+      "speed": 85
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
+  },
+  "zapdos": {
+    "number": 145,
+    "name": "Zapdos",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "category": "Electric Pokémon",
+    "height": "1.6 m",
+    "weight": "52.6 kg",
+    "description": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
+    "abilities": [
+      "Pressure",
+      "Static"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 90,
+      "attack": 90,
+      "defense": 85,
+      "sp_atk": 125,
+      "sp_def": 90,
+      "speed": 100
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+  },
+  "moltres": {
+    "number": 146,
+    "name": "Moltres",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "category": "Flame Pokémon",
+    "height": "2.0 m",
+    "weight": "60.0 kg",
+    "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
+    "abilities": [
+      "Pressure",
+      "Flame Body"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 90,
+      "attack": 100,
+      "defense": 90,
+      "sp_atk": 125,
+      "sp_def": 85,
+      "speed": 90
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
+  },
+  "dratini": {
+    "number": 147,
+    "name": "Dratini",
+    "types": [
+      "Dragon"
+    ],
+    "category": "Dragon Pokémon",
+    "height": "1.8 m",
+    "weight": "3.3 kg",
+    "description": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
+    "abilities": [
+      "Shed Skin",
+      "Marvel Scale"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "sp_atk": 50,
+      "sp_def": 50,
+      "speed": 50
+    },
+    "evolution": "Dratini → Dragonair → Dragonite",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+  },
+  "dragonair": {
+    "number": 148,
+    "name": "Dragonair",
+    "types": [
+      "Dragon"
+    ],
+    "category": "Dragon Pokémon",
+    "height": "4.0 m",
+    "weight": "16.5 kg",
+    "description": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
+    "abilities": [
+      "Shed Skin",
+      "Marvel Scale"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 61,
+      "attack": 84,
+      "defense": 65,
+      "sp_atk": 70,
+      "sp_def": 70,
+      "speed": 70
+    },
+    "evolution": "Dratini → Dragonair → Dragonite",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+  },
+  "dragonite": {
+    "number": 149,
+    "name": "Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "category": "Dragon Pokémon",
+    "height": "2.2 m",
+    "weight": "210.0 kg",
+    "description": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
+    "abilities": [
+      "Inner Focus",
+      "Multiscale"
+    ],
+    "gender_ratio": "♂ 50.0% / ♀ 50.0%",
+    "base_stats": {
+      "hp": 91,
+      "attack": 134,
+      "defense": 95,
+      "sp_atk": 100,
+      "sp_def": 100,
+      "speed": 80
+    },
+    "evolution": "Dratini → Dragonair → Dragonite",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+  },
+  "mewtwo": {
+    "number": 150,
+    "name": "Mewtwo",
+    "types": [
+      "Psychic"
+    ],
+    "category": "Genetic Pokémon",
+    "height": "2.0 m",
+    "weight": "122.0 kg",
+    "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
+    "abilities": [
+      "Pressure",
+      "Unnerve"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 106,
+      "attack": 110,
+      "defense": 90,
+      "sp_atk": 154,
+      "sp_def": 90,
+      "speed": 130
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+  },
+  "mew": {
+    "number": 151,
+    "name": "Mew",
+    "types": [
+      "Psychic"
+    ],
+    "category": "New Species Pokémon",
+    "height": "0.4 m",
+    "weight": "4.0 kg",
+    "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
+    "abilities": [
+      "Synchronize"
+    ],
+    "gender_ratio": "Genderless",
+    "base_stats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "sp_atk": 100,
+      "sp_def": 100,
+      "speed": 100
+    },
+    "evolution": "Does not evolve",
+    "generation": 1,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+  }
+}

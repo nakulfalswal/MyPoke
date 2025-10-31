@@ -1,0 +1,213 @@
+{
+    "875243736987217920": {
+        "pokemons": [
+            {
+                "name": "squirtle",
+                "level": 17,
+                "xp": 95,
+                "gender": "Male",
+                "nature": "Brave",
+                "ivs": {
+                    "hp": 14,
+                    "attack": 0,
+                    "defense": 29,
+                    "sp_atk": 24,
+                    "sp_def": 27,
+                    "speed": 11
+                },
+                "stats": {
+                    "HP": 44,
+                    "Attack": 21,
+                    "Defense": 32,
+                    "Sp. Atk": 26,
+                    "Sp. Def": 31,
+                    "Speed": 21
+                },
+                "current_hp": 44,
+                "moves": [
+                    "Tackle",
+                    "Tail Whip",
+                    "Water Gun"
+                ]
+            }
+        ],
+        "selected_pokemon_index": 0,
+        "items": {}
+    },
+    "587237271913365504": {
+        "pokemons": [
+            {
+                "name": "charmander",
+                "level": 8,
+                "xp": 95,
+                "gender": "Male",
+                "nature": "Adamant",
+                "ivs": {
+                    "hp": 11,
+                    "attack": 27,
+                    "defense": 17,
+                    "sp_atk": 27,
+                    "sp_def": 29,
+                    "speed": 15
+                },
+                "stats": {
+                    "HP": 25,
+                    "Attack": 15,
+                    "Defense": 13,
+                    "Sp. Atk": 16,
+                    "Sp. Def": 15,
+                    "Speed": 16
+                },
+                "current_hp": 25,
+                "moves": [
+                    "Scratch",
+                    "Growl",
+                    "Ember"
+                ]
+            }
+        ],
+        "selected_pokemon_index": 0,
+        "items": {}
+    },
+    "923138271008129054": {
+        "pokemons": [
+            {
+                "name": "squirtle",
+                "level": 5,
+                "xp": 0,
+                "gender": "Male",
+                "nature": "Gentle",
+                "ivs": {
+                    "hp": 29,
+                    "attack": 16,
+                    "defense": 18,
+                    "sp_atk": 4,
+                    "sp_def": 14,
+                    "speed": 9
+                },
+                "stats": {
+                    "HP": 20,
+                    "Attack": 10,
+                    "Defense": 12,
+                    "Sp. Atk": 10,
+                    "Sp. Def": 12,
+                    "Speed": 9
+                },
+                "current_hp": 20,
+                "moves": [
+                    "Tackle",
+                    "Tail Whip",
+                    "Water Gun"
+                ]
+            }
+        ],
+        "selected_pokemon_index": 0,
+        "items": {}
+    },
+    "693043665702223913": {
+        "pokemons": [
+            {
+                "name": "charmander",
+                "level": 5,
+                "xp": 75,
+                "gender": "Female",
+                "nature": "Calm",
+                "ivs": {
+                    "hp": 27,
+                    "attack": 19,
+                    "defense": 19,
+                    "sp_atk": 6,
+                    "sp_def": 29,
+                    "speed": 2
+                },
+                "stats": {
+                    "HP": 20,
+                    "Attack": 11,
+                    "Defense": 10,
+                    "Sp. Atk": 11,
+                    "Sp. Def": 11,
+                    "Speed": 11
+                },
+                "current_hp": 20,
+                "moves": [
+                    "Scratch",
+                    "Growl",
+                    "Ember"
+                ]
+            }
+        ],
+        "selected_pokemon_index": 0,
+        "items": {}
+    },
+    "1134462930184843264": {
+        "pokemons": [
+            {
+                "name": "bulbasaur",
+                "level": 9,
+                "xp": 35,
+                "gender": "Male",
+                "nature": "Hardy",
+                "ivs": {
+                    "hp": 5,
+                    "attack": 26,
+                    "defense": 21,
+                    "sp_atk": 21,
+                    "sp_def": 2,
+                    "speed": 28
+                },
+                "stats": {
+                    "HP": 27,
+                    "Attack": 16,
+                    "Defense": 15,
+                    "Sp. Atk": 18,
+                    "Sp. Def": 16,
+                    "Speed": 15
+                },
+                "current_hp": 27,
+                "moves": [
+                    "Tackle",
+                    "Growl",
+                    "Vine Whip"
+                ]
+            }
+        ],
+        "selected_pokemon_index": 0,
+        "items": {}
+    },
+    "1431370994022486156": {
+        "pokemons": [
+            {
+                "name": "bulbasaur",
+                "level": 5,
+                "xp": 70,
+                "gender": "Male",
+                "nature": "Timid",
+                "ivs": {
+                    "hp": 2,
+                    "attack": 4,
+                    "defense": 17,
+                    "sp_atk": 10,
+                    "sp_def": 22,
+                    "speed": 1
+                },
+                "stats": {
+                    "HP": 19,
+                    "Attack": 10,
+                    "Defense": 10,
+                    "Sp. Atk": 12,
+                    "Sp. Def": 12,
+                    "Speed": 9
+                },
+                "current_hp": 19,
+                "moves": [
+                    "Vine Whip",
+                    "Tackle",
+                    "Growl",
+                    "Leech Seed"
+                ]
+            }
+        ],
+        "selected_pokemon_index": 0,
+        "items": {}
+    }
+}
