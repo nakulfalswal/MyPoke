@@ -6,6 +6,9 @@ import random
 from dotenv import load_dotenv
 from keep_alive import keep_alive
 import asyncio
+from PIL import Image
+import requests
+from io import BytesIO
 
 
 # --- Basic Setup ---
@@ -37,7 +40,15 @@ async def help(ctx):
 USER_DATA_FILE = "user_data.json"
 POKEMON_DATA_FILE = "pokemon_data.json"
 MOVES_DATA_FILE = "moves.json"
+USER_BALANCE_FILE = "user_balance.json"
 SAVE_INTERVAL_SECONDS = 60
+POKEBALL_EMOJIS = {
+    "pokeball": "<:pokeball:1434234039363178577>",      # Replace with actual ID
+    "greatball": "<:pokeball1:1434234047332221151>",    # Replace with actual ID
+    "ultraball": "<:ultraball:1434234042131157024>",    # Replace with actual ID
+    "masterball": "<:masterball:1434234044819836968>"   # Replace with actual ID
+}
+
 TYPE_CHART = {
     "normal": {"rock": 0.5, "ghost": 0, "steel": 0.5},
     "fire": {"fire": 0.5, "water": 0.5, "grass": 2, "ice": 2, "bug": 2, "rock": 0.5, "dragon": 0.5, "steel": 2},
@@ -63,12 +74,13 @@ TYPE_CHART = {
 user_data = {}
 pokemon_data = {}
 moves_data = {}
+user_balance = {}
 active_battles = {} # Key: channel.id, Value: Battle object
 
 # --- Helper Functions ---
 def load_data():
     """Loads all necessary data from JSON files into memory."""
-    global user_data, pokemon_data, moves_data
+    global user_data, pokemon_data, moves_data, user_balance
 
     if not os.path.exists(USER_DATA_FILE):
         with open(USER_DATA_FILE, "w") as f:
@@ -85,6 +97,16 @@ def load_data():
 
     with open(MOVES_DATA_FILE, "r") as f:
         moves_data = json.load(f)
+
+    if not os.path.exists(USER_BALANCE_FILE):
+        with open(USER_BALANCE_FILE, "w") as f:
+            json.dump({}, f)
+    with open(USER_BALANCE_FILE, "r") as f:
+        try:
+            user_balance = json.load(f)
+        except json.JSONDecodeError:
+            user_balance = {}
+
 
 def generate_ivs():
     """Generates a dictionary of random IVs for a Pokémon."""
@@ -292,51 +314,127 @@ class Battle:
         bar = bar_char * filled + empty_char * (length - filled)
         return f"`{bar}` {current_hp}/{max_hp} HP"
 
+
+
+
+    async def create_side_by_side_image(self):
+        """
+        Creates a single image with both Pokémon side by side.
+        Returns a discord.File object or None if failed.
+        """
+        try:
+            cp_image_url = pokedex_data.get(self.challenger_pokemon['name'], {}).get('image_url')
+            op_image_url = pokedex_data.get(self.opponent_pokemon['name'], {}).get('image_url')
+
+            if not cp_image_url or not op_image_url:
+                return None
+
+            # Download both images
+            print(f"Downloading images for battle...")
+            response1 = requests.get(cp_image_url, timeout=5)
+            response2 = requests.get(op_image_url, timeout=5)
+
+            # Open images
+            img1 = Image.open(BytesIO(response1.content)).convert('RGBA')
+            img2 = Image.open(BytesIO(response2.content)).convert('RGBA')
+
+            # Resize both to same height (300px)
+            target_height = 300
+
+            # Resize image 1
+            ratio1 = target_height / img1.height
+            new_width1 = int(img1.width * ratio1)
+            img1_resized = img1.resize((new_width1, target_height), Image.Resampling.LANCZOS)
+
+            # Resize image 2
+            ratio2 = target_height / img2.height
+            new_width2 = int(img2.width * ratio2)
+            img2_resized = img2.resize((new_width2, target_height), Image.Resampling.LANCZOS)
+
+            # Create combined image with space between
+            gap = 100  # Space between Pokémon
+            total_width = new_width1 + gap + new_width2
+
+            # Create transparent background
+            combined = Image.new('RGBA', (total_width, target_height), (0, 0, 0, 0))
+
+            # Paste images side by side
+            combined.paste(img1_resized, (0, 0), img1_resized)
+            combined.paste(img2_resized, (new_width1 + gap, 0), img2_resized)
+
+            # Save to bytes
+            output = BytesIO()
+            combined.save(output, format='PNG')
+            output.seek(0)
+
+            print(f"✓ Combined battle image created successfully!")
+            return discord.File(output, filename='battle_scene.png')
+
+        except Exception as e:
+            print(f"✗ Error creating battle image: {e}")
+            return None
+
+
+    
+
     async def show_battle_status(self, message: str = ""):
         """Sends an embed with the current battle status to the channel."""
-        embed = discord.Embed(
-            title=f"⚔️ Battle: {self.challenger.display_name} vs {self.opponent.display_name}",
-            description=message if message else "Choose your move!",
-            color=discord.Color.blue()
-        )
 
-        # Challenger's Pokémon info
+        # Get Pokémon data
         cp = self.challenger_pokemon
         cp_name = cp['name'].capitalize()
         cp_types = " | ".join(pokemon_data.get(cp['name'], {}).get('types', ['Normal']))
 
-        embed.add_field(
-            name=f"{self.challenger.display_name}'s {cp_name} (Lv.{cp['level']})",
-            value=f"**Type:** {cp_types}\n{self.get_hp_bar(cp['current_hp'], cp['stats']['HP'])}",
-            inline=False
-        )
-
-        # Opponent's Pokémon info
         op = self.opponent_pokemon
         op_name = op['name'].capitalize()
         op_types = " | ".join(pokemon_data.get(op['name'], {}).get('types', ['Normal']))
 
-        embed.add_field(
-            name=f"{self.opponent.display_name}'s {op_name} (Lv.{op['level']})",
-            value=f"**Type:** {op_types}\n{self.get_hp_bar(op['current_hp'], op['stats']['HP'])}",
-            inline=False
+        # Create the embed
+        embed = discord.Embed(
+            title=f"⚔️ {cp_name} vs {op_name}",
+            description=f"**{self.challenger.display_name}** vs **{self.opponent.display_name}**\n{message if message else ''}",
+            color=discord.Color.blue()
         )
 
-        # Add both Pokémon images as thumbnails (side by side effect)
-        cp_image = pokedex_data.get(cp['name'], {}).get('image_url')
-        if cp_image:
-            embed.set_thumbnail(url=cp_image)
+        # Left column - Challenger
+        challenger_info = (
+            f"**Level {cp['level']}**\n"
+            f"**Type:** {cp_types}\n"
+            f"{self.get_hp_bar(cp['current_hp'], cp['stats']['HP'])}"
+        )
+        embed.add_field(name=f"🔵 {self.challenger.display_name}", value=challenger_info, inline=True)
 
-        # Use author image for opponent instead of main image (keeps it smaller)
-        op_image = pokedex_data.get(op['name'], {}).get('image_url')
-        if op_image:
-            embed.set_author(
-                name=f"{op_name}",
-                icon_url=op_image
-            )
+        # Middle spacer
+        embed.add_field(name="⚔️", value="VS", inline=True)
 
-        embed.set_footer(text="Moves sent to DMs! You have 10 seconds to choose.")
-        await self.channel.send(embed=embed)
+        # Right column - Opponent
+        opponent_info = (
+            f"**Level {op['level']}**\n"
+            f"**Type:** {op_types}\n"
+            f"{self.get_hp_bar(op['current_hp'], op['stats']['HP'])}"
+        )
+        embed.add_field(name=f"🔴 {self.opponent.display_name}", value=opponent_info, inline=True)
+
+        embed.set_footer(text="⏱️ You have 10 seconds to choose your move in DMs!")
+
+        # Create combined side-by-side image
+        battle_image = await self.create_side_by_side_image()
+
+        if battle_image:
+            # Use the combined image
+            embed.set_image(url="attachment://battle_scene.png")
+            await self.channel.send(embed=embed, file=battle_image)
+        else:
+            # Fallback: use separate images
+            cp_image = pokedex_data.get(cp['name'], {}).get('image_url')
+            op_image = pokedex_data.get(op['name'], {}).get('image_url')
+
+            if cp_image:
+                embed.set_image(url=cp_image)
+            if op_image:
+                embed.set_thumbnail(url=op_image)
+
+            await self.channel.send(embed=embed)
 
     async def send_move_choices_dm(self, player: discord.Member, pokemon: dict):
         """Sends available moves to player's DM."""
@@ -378,6 +476,9 @@ class Battle:
         self.move_selection_active = True
         self.challenger_move = None
         self.opponent_move = None
+
+        
+
 
         # Send move options to both players
         await self.show_battle_status("📨 Sending move selections to your DMs...")
@@ -661,6 +762,9 @@ async def save_user_data():
     with open(USER_DATA_FILE, "w") as f:
         json.dump(user_data, f, indent=4)
 
+    with open(USER_BALANCE_FILE, "w") as f:
+        json.dump(user_balance, f, indent=4)
+
 # --- Player Commands ---
 @bot.command()
 async def start(ctx):
@@ -669,10 +773,12 @@ async def start(ctx):
         await ctx.send("You've already started your journey!")
     else:
         user_data[user_id] = {}
+        init_user_balance(user_id)  # Initialize balance
         await ctx.send(
             "Welcome to the world of Pokémon! Please choose your starter by typing `!choose <pokemon>`\n"
             "(Options: bulbasaur, charmander, squirtle)"
         )
+
 
 @bot.command()
 async def choose(ctx, choice: str):
@@ -695,49 +801,371 @@ async def choose(ctx, choice: str):
         "selected_pokemon_index": 0,
         "items": {}
     }
-    await ctx.send(f"You chose **{choice.capitalize()}**! Your journey begins now!")
-    await ctx.send("You can check your Pokémon's details with `!info` and your team with `!team`.")
+
+    # Give starter bonus items
+    if user_id in user_balance:
+        user_balance[user_id]["pokecoins"] += 1000  # Bonus coins
+        user_balance[user_id]["pokeballs"]["pokeball"] += 10  # Bonus Poké Balls
+
+    await ctx.send(
+        f"You chose **{choice.capitalize()}**! Your journey begins now!\n"
+        f"🎁 **Starter Pack:** +1000 PokéCoins, +10 Poké Balls!"
+    )
+    await ctx.send("Check your balance with `!bal` and your team with `!team`.")
+
+def init_user_balance(user_id: str):
+    """Initializes balance for a new user."""
+    if user_id not in user_balance:
+        user_balance[user_id] = {
+            "pokecoins": 5000,  # Starting money
+            "evolution_stones": {
+                "fire": 0,
+                "water": 0,
+                "thunder": 0,
+                "leaf": 0,
+                "moon": 0,
+                "sun": 0,
+                "shiny": 0,
+                "dusk": 0,
+                "dawn": 0,
+                "ice": 0
+            },
+            "mega_stones": {
+                "charizardite-x": 0,
+                "charizardite-y": 0,
+                "venusaurite": 0,
+                "blastoisinite": 0,
+                "gengarite": 0
+            },
+            "redeem_shards": {
+                "pokegem": 0,
+                "gold_card": 0
+            },
+            "pokeballs": {
+                "pokeball": 50,      # Regular Poké Balls
+                "greatball": 20,     # Great Balls
+                "ultraball": 10,     # Ultra Balls
+                "masterball": 0      # Master Balls (rare!)
+            }
+        }
+
+# ============================================
+# REPLACE YOUR !bal COMMAND WITH THIS
+# ============================================
 
 @bot.command()
-async def info(ctx):
+async def bal(ctx):
+    """Shows the user's balance and items with custom Pokéball emojis."""
     user_id = str(ctx.author.id)
+
     if user_id not in user_data or not user_data[user_id].get("pokemons"):
-        await ctx.send("You haven't started your journey yet. Use `!start` and `!choose`.")
+        await ctx.send("❌ You haven't started your journey yet! Use `!start` first.")
+        return
+
+    if user_id not in user_balance:
+        init_user_balance(user_id)
+
+    balance = user_balance[user_id]
+
+    embed = discord.Embed(
+        title="💰 Poké-Currency & Items",
+        description=f"**{ctx.author.display_name}'s Balance**",
+        color=0xFFD700
+    )
+
+    embed.set_thumbnail(url=ctx.author.display_avatar.url)
+
+    # Poké Coins (LEFT)
+    embed.add_field(
+        name="🪙 Poké Coins",
+        value=f"💰 **{balance['pokecoins']:,}**",
+        inline=True
+    )
+
+    # Redeem Card Shards (RIGHT)
+    shards = balance['redeem_shards']
+    shard_text = (
+        f"💎 **{shards['pokegem']}/100** PokéGem Shards\n"
+        f"🏆 **{shards['gold_card']}/100** Gold Card Shards"
+    )
+    embed.add_field(
+        name="🎴 Redeem Card Shards",
+        value=shard_text,
+        inline=True
+    )
+
+    # Separator
+    embed.add_field(
+        name="\u200b",
+        value="─────────────────────────────────────────────────────",
+        inline=False
+    )
+
+    # Poké Balls with custom emojis
+    balls = balance['pokeballs']
+
+    # Option A: Using predefined emoji IDs
+    ball_lines = [
+        f"{POKEBALL_EMOJIS['pokeball']} x**{balls['pokeball']}** Poké Balls",
+        f"{POKEBALL_EMOJIS['greatball']} x**{balls['greatball']}** Great Balls",
+        f"{POKEBALL_EMOJIS['ultraball']} x**{balls['ultraball']}** Ultra Balls"
+    ]
+
+    if balls['masterball'] > 0:
+        ball_lines.append(f"{POKEBALL_EMOJIS['masterball']} x**{balls['masterball']}** Master Balls")
+
+    # Option B: Using auto-detection (if emojis are uploaded)
+    # ball_lines = [
+    #     f"{get_pokeball_emoji(bot, 'pokeball')} x**{balls['pokeball']}** Poké Balls",
+    #     f"{get_pokeball_emoji(bot, 'greatball')} x**{balls['greatball']}** Great Balls",
+    #     f"{get_pokeball_emoji(bot, 'ultraball')} x**{balls['ultraball']}** Ultra Balls"
+    # ]
+
+    embed.add_field(
+        name="⚪ Poké Balls",
+        value="\n".join(ball_lines),
+        inline=False
+    )
+
+    # Bottom separator
+    embed.add_field(
+        name="\u200b",
+        value="─────────────────────────────────────────────────────",
+        inline=False
+    )
+
+    embed.set_footer(text=f"Requested by @{ctx.author.name} • Use !shop to buy items!")
+    embed.timestamp = discord.utils.utcnow()
+
+    await ctx.send(embed=embed)
+
+
+
+@bot.command()
+async def info(ctx, index: int = None):
+    """
+    Shows detailed info about a Pokémon.
+    Usage: !info - Shows selected Pokémon
+           !info 2 - Shows Pokémon at position 2
+    """
+    user_id = str(ctx.author.id)
+
+    # Check if user has started
+    if user_id not in user_data or not user_data[user_id].get("pokemons"):
+        await ctx.send("❌ You haven't started your journey yet. Use `!start` and `!choose`.")
         return
 
     player_data = user_data[user_id]
-    poke = player_data["pokemons"][player_data["selected_pokemon_index"]]
+
+    # Determine which Pokémon to show
+    if index is None:
+        # Show selected Pokémon
+        poke_index = player_data["selected_pokemon_index"]
+    else:
+        # Show Pokémon at specified position
+        poke_index = index - 1  # Convert to 0-based index
+
+        if poke_index < 0 or poke_index >= len(player_data["pokemons"]):
+            await ctx.send(f"❌ Invalid position! You have {len(player_data['pokemons'])} Pokémon. Use `!team` to see your team.")
+            return
+
+    poke = player_data["pokemons"][poke_index]
+
+    # Calculate total IV percentage
     total_iv_percent = sum(poke["ivs"].values()) / (31 * 6) * 100
 
+    # Get Pokémon types
+    poke_types = pokemon_data.get(poke['name'], {}).get('types', ['Normal'])
+    types_display = " | ".join(poke_types)
+
+    # Choose embed color based on primary type
+    type_colors = {
+        "Normal": 0xA8A878, "Fire": 0xF08030, "Water": 0x6890F0,
+        "Electric": 0xF8D030, "Grass": 0x78C850, "Ice": 0x98D8D8,
+        "Fighting": 0xC03028, "Poison": 0xA040A0, "Ground": 0xE0C068,
+        "Flying": 0xA890F0, "Psychic": 0xF85888, "Bug": 0xA8B820,
+        "Rock": 0xB8A038, "Ghost": 0x705898, "Dragon": 0x7038F8,
+        "Dark": 0x705848, "Steel": 0xB8B8D0, "Fairy": 0xEE99AC
+    }
+    embed_color = type_colors.get(poke_types[0], 0x000000)
+
+    # Create embed with dark theme
     embed = discord.Embed(
         title=f"Level {poke['level']} {poke['name'].capitalize()}",
-        description=f"**XP:** {poke['xp']}/100\n**Gender:** {poke['gender']}\n**Nature:** {poke['nature']}",
-        color=discord.Color.blue()
+        description=f"**Type:** {types_display}",
+        color=embed_color
     )
-    embed.add_field(name="Stats", value="\n".join(f"**{stat}:** {value}" for stat, value in poke['stats'].items()), inline=False)
-    embed.add_field(name="IVs", value="\n".join(f"{stat.upper()}: {val}/31" for stat, val in poke['ivs'].items()), inline=False)
-    embed.add_field(name="Total IV%", value=f"{total_iv_percent:.2f}%", inline=False)
+
+    # Add Pokémon image
+    poke_image = pokedex_data.get(poke['name'], {}).get('image_url')
+    if poke_image:
+        embed.set_thumbnail(url=poke_image)
+
+    # ═══════════════════════════════════════
+    # DETAILS SECTION
+    # ═══════════════════════════════════════
+    details = (
+        f"**XP:** {poke['xp']}/100\n"
+        f"**Nature:** {poke['nature']}\n"
+        f"**Gender:** {poke['gender']}"
+    )
+    embed.add_field(name="📋 Details", value=details, inline=False)
+
+    # ═══════════════════════════════════════
+    # STATS WITH IVs (Combined Display)
+    # ═══════════════════════════════════════
+    stats_with_ivs = []
+    for stat_key, stat_name in [
+        ("HP", "HP"),
+        ("Attack", "Attack"),
+        ("Defense", "Defense"),
+        ("Sp. Atk", "Sp. Atk"),
+        ("Sp. Def", "Sp. Def"),
+        ("Speed", "Speed")
+    ]:
+        stat_value = poke['stats'][stat_name]
+
+        # Get corresponding IV
+        iv_key = stat_name.lower().replace(". ", "_").replace(" ", "_")
+        if iv_key == "sp_atk":
+            iv_key = "sp_atk"
+        elif iv_key == "sp_def":
+            iv_key = "sp_def"
+
+        iv_value = poke['ivs'].get(iv_key, 0)
+
+        stats_with_ivs.append(f"**{stat_name}:** {stat_value} — IV: {iv_value}/31")
+
+    embed.add_field(
+        name="📊 Stats",
+        value="\n".join(stats_with_ivs),
+        inline=False
+    )
+
+    # ═══════════════════════════════════════
+    # TOTAL IV PERCENTAGE
+    # ═══════════════════════════════════════
+    # Create visual bar for IV percentage
+    iv_bar_length = 20
+    iv_filled = int((total_iv_percent / 100) * iv_bar_length)
+    iv_bar = "█" * iv_filled + "░" * (iv_bar_length - iv_filled)
+
+    iv_color = "🟢" if total_iv_percent >= 80 else "🟡" if total_iv_percent >= 60 else "🔴"
+
+    embed.add_field(
+        name="💎 Total IV%",
+        value=f"{iv_color} **{total_iv_percent:.2f}%**\n`{iv_bar}`",
+        inline=False
+    )
+
+    # ═══════════════════════════════════════
+    # MOVES SECTION
+    # ═══════════════════════════════════════
+    moves_display = ", ".join([f"**{move.title()}**" for move in poke['moves']])
+    embed.add_field(
+        name="⚔️ Moves",
+        value=moves_display if moves_display else "No moves learned",
+        inline=False
+    )
+
+    # ═══════════════════════════════════════
+    # FOOTER
+    # ═══════════════════════════════════════
+    footer_text = f"Pokémon #{poke_index + 1}/{len(player_data['pokemons'])}"
+    if poke_index == player_data["selected_pokemon_index"]:
+        footer_text += " • Currently Selected"
+
+    embed.set_footer(text=footer_text)
+
     await ctx.send(embed=embed)
 
 @bot.command()
 async def team(ctx):
+    """
+    Shows team with Pokémon type emojis (supports dual-type).
+    Clean visual display with type indicators.
+    """
     user_id = str(ctx.author.id)
+
     if user_id not in user_data or not user_data[user_id].get("pokemons"):
-        await ctx.send("You don't have any Pokémon in your team yet!")
+        await ctx.send("❌ You don't have any Pokémon in your team yet!")
         return
 
     player_data = user_data[user_id]
-    embed = discord.Embed(title=f"{ctx.author.display_name}'s Team", color=discord.Color.green())
+
+    # Create embed
+    embed = discord.Embed(
+        title=f"🎒 {ctx.author.display_name}'s Pokémon Team",
+        color=0x3BA55D  # Green
+    )
+
+    embed.set_author(
+        name=f"{len(player_data['pokemons'])} Pokémon",
+        icon_url=ctx.author.display_avatar.url
+    )
+
+    # Type emoji mapping
+    type_emojis = {
+        "Normal": "⚪",
+        "Fire": "🔥",
+        "Water": "💧",
+        "Electric": "⚡",
+        "Grass": "🌿",
+        "Ice": "❄️",
+        "Fighting": "🥊",
+        "Poison": "☠️",
+        "Ground": "🌍",
+        "Flying": "🕊️",
+        "Psychic": "🔮",
+        "Bug": "🐛",
+        "Rock": "🪨",
+        "Ghost": "👻",
+        "Dragon": "🐉",
+        "Dark": "🌑",
+        "Steel": "⚙️",
+        "Fairy": "🧚"
+    }
 
     for i, poke in enumerate(player_data["pokemons"]):
+        # Calculate IV
         iv_percent = sum(poke["ivs"].values()) / (31 * 6) * 100
-        selected_marker = ">> " if i == player_data["selected_pokemon_index"] else ""
+
+        # Get types (supports dual-type)
+        poke_types = pokemon_data.get(poke['name'], {}).get('types', ['Normal'])
+
+        # Build type emoji display
+        if len(poke_types) == 1:
+            # Single type
+            type_display = type_emojis.get(poke_types[0], "⚪")
+        else:
+            # Dual type (e.g., 💧/☠️ for Water/Poison)
+            type1_emoji = type_emojis.get(poke_types[0], "⚪")
+            type2_emoji = type_emojis.get(poke_types[1], "⚪")
+            type_display = f"{type1_emoji}/{type2_emoji}"
+
+        # Gender
+        gender = "♂️" if poke['gender'] == "Male" else "♀️"
+
+        # Selected marker
+        selected_mark = "🔹 " if i == player_data["selected_pokemon_index"] else ""
+
+        # Build display line
+        name_display = f"{selected_mark}{type_display} **{poke['name'].capitalize()}** {gender}"
+        stats_display = f"Lvl. **{poke['level']}** • IV: **{iv_percent:.1f}%**"
+
+        # Add as field (one per Pokémon for clean separation)
         embed.add_field(
-            name=f"{selected_marker}{i+1}. {poke['name'].capitalize()} (Lvl {poke['level']})",
-            value=f"HP: {poke['current_hp']}/{poke['stats']['HP']} | IV: {iv_percent:.2f}%",
+            name=f"{i+1}. {name_display}",
+            value=stats_display,
             inline=False
         )
+
+    # Footer
+    selected = player_data["selected_pokemon_index"] + 1
+    embed.set_footer(text=f"✨ Currently selected: Pokémon #{selected} • Use !info <number> for details")
+
     await ctx.send(embed=embed)
+
 
 @bot.command()
 async def select(ctx, position: int):

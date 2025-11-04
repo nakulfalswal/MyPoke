@@ -3,8 +3,8 @@
         "pokemons": [
             {
                 "name": "squirtle",
-                "level": 17,
-                "xp": 95,
+                "level": 19,
+                "xp": 90,
                 "gender": "Male",
                 "nature": "Brave",
                 "ivs": {
@@ -16,14 +16,14 @@
                     "speed": 11
                 },
                 "stats": {
-                    "HP": 44,
-                    "Attack": 21,
-                    "Defense": 32,
-                    "Sp. Atk": 26,
-                    "Sp. Def": 31,
-                    "Speed": 21
+                    "HP": 48,
+                    "Attack": 23,
+                    "Defense": 35,
+                    "Sp. Atk": 28,
+                    "Sp. Def": 34,
+                    "Speed": 23
                 },
-                "current_hp": 44,
+                "current_hp": 48,
                 "moves": [
                     "Tackle",
                     "Tail Whip",
@@ -38,8 +38,8 @@
         "pokemons": [
             {
                 "name": "charmander",
-                "level": 8,
-                "xp": 95,
+                "level": 9,
+                "xp": 10,
                 "gender": "Male",
                 "nature": "Adamant",
                 "ivs": {
@@ -51,14 +51,14 @@
                     "speed": 15
                 },
                 "stats": {
-                    "HP": 25,
-                    "Attack": 15,
-                    "Defense": 13,
-                    "Sp. Atk": 16,
-                    "Sp. Def": 15,
-                    "Speed": 16
+                    "HP": 27,
+                    "Attack": 16,
+                    "Defense": 14,
+                    "Sp. Atk": 18,
+                    "Sp. Def": 16,
+                    "Speed": 18
                 },
-                "current_hp": 25,
+                "current_hp": 27,
                 "moves": [
                     "Scratch",
                     "Growl",
@@ -144,7 +144,7 @@
             {
                 "name": "bulbasaur",
                 "level": 9,
-                "xp": 35,
+                "xp": 65,
                 "gender": "Male",
                 "nature": "Hardy",
                 "ivs": {
@@ -179,7 +179,7 @@
             {
                 "name": "bulbasaur",
                 "level": 5,
-                "xp": 70,
+                "xp": 80,
                 "gender": "Male",
                 "nature": "Timid",
                 "ivs": {
