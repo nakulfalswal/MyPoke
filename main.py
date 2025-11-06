@@ -69,6 +69,226 @@ TYPE_CHART = {
     "steel": {"fire": 0.5, "water": 0.5, "electric": 0.5, "ice": 2, "rock": 2, "steel": 0.5, "fairy": 2},
     "fairy": {"fire": 0.5, "fighting": 2, "poison": 0.5, "dragon": 2, "dark": 2, "steel": 0.5}
 }
+# Spawn system constants
+SPAWN_BASE_MESSAGES = 35  # Base messages needed for spawn
+SPAWN_ACTIVE_THRESHOLD = 5  # Users active in last 5 minutes
+SPAWN_ACTIVE_MESSAGES = 25  # Messages needed when server is active
+MAX_CATCH_ATTEMPTS = 3
+
+# Pokemon rarity configuration
+RARITY_TIERS = {
+    "common": {
+        "spawn_weight": 50,
+        "catch_rate": 90,
+        "ball_required": "pokeball",
+        "pokemon": ["pidgey", "rattata", "weedle", "caterpie", "spearow", "ekans", "sandshrew", "zubat", "oddish", "paras", "venonat", "diglett", "meowth", "psyduck", "poliwag", "bellsprout", "tentacool", "geodude", "magikarp", "goldeen", "staryu", "eevee"]
+    },
+    "uncommon": {
+        "spawn_weight": 30,
+        "catch_rate": 75,
+        "ball_required": "pokeball",
+        "pokemon": ["bulbasaur", "charmander", "squirtle", "pikachu", "nidoran-f", "nidoran-m", "clefairy", "jigglypuff", "mankey", "growlithe", "machop", "ponyta", "slowpoke", "farfetchd", "seel", "grimer", "shellder", "gastly", "onix", "drowzee", "krabby", "voltorb", "exeggcute", "cubone", "lickitung", "koffing", "rhyhorn", "tangela", "horsea", "mr-mime"]
+    },
+    "rare": {
+        "spawn_weight": 15,
+        "catch_rate": 60,
+        "ball_required": "greatball",
+        "pokemon": ["nidorina", "nidorino", "vulpix", "gloom", "persian", "golduck", "primeape", "arcanine", "poliwhirl", "kadabra", "machoke", "weepinbell", "graveler", "rapidash", "slowbro", "magneton", "dodrio", "dewgong", "haunter", "hypno", "kingler", "electrode", "exeggutor", "marowak", "hitmonlee", "hitmonchan", "chansey", "kangaskhan", "seadra", "seaking", "starmie", "jynx", "electabuzz", "magmar", "pinsir", "tauros", "porygon"]
+    },
+    "epic": {
+        "spawn_weight": 4,
+        "catch_rate": 45,
+        "ball_required": "ultraball",
+        "pokemon": ["ivysaur", "charmeleon", "wartortle", "raichu", "nidoqueen", "nidoking", "ninetales", "wigglytuff", "vileplume", "dugtrio", "venomoth", "alakazam", "machamp", "victreebel", "golem", "muk", "cloyster", "gengar", "weezing", "rhydon", "gyarados", "lapras", "ditto", "vaporeon", "jolteon", "flareon", "omastar", "kabutops", "aerodactyl", "snorlax"]
+    },
+    "legendary": {
+        "spawn_weight": 0.8,
+        "catch_rate": 30,
+        "ball_required": "ultraball",
+        "pokemon": ["venusaur", "charizard", "blastoise", "articuno", "zapdos", "moltres", "dragonite"]
+    },
+    "mythical": {
+        "spawn_weight": 0.2,
+        "catch_rate": 15,
+        "ball_required": "masterball",
+        "pokemon": ["mew", "mewtwo"]
+    }
+}
+
+# Evolution data
+EVOLUTION_DATA = {
+    "bulbasaur": {"evolves_to": "ivysaur", "level": 16},
+    "ivysaur": {"evolves_to": "venusaur", "level": 32},
+    "charmander": {"evolves_to": "charmeleon", "level": 16},
+    "charmeleon": {"evolves_to": "charizard", "level": 36},
+    "squirtle": {"evolves_to": "wartortle", "level": 16},
+    "wartortle": {"evolves_to": "blastoise", "level": 36},
+    "caterpie": {"evolves_to": "metapod", "level": 7},
+    "metapod": {"evolves_to": "butterfree", "level": 10},
+    "weedle": {"evolves_to": "kakuna", "level": 7},
+    "kakuna": {"evolves_to": "beedrill", "level": 10},
+    "pidgey": {"evolves_to": "pidgeotto", "level": 18},
+    "pidgeotto": {"evolves_to": "pidgeot", "level": 36},
+    "rattata": {"evolves_to": "raticate", "level": 20},
+    "spearow": {"evolves_to": "fearow", "level": 20},
+    "ekans": {"evolves_to": "arbok", "level": 22},
+    "pikachu": {"evolves_to": "raichu", "level": 22},
+    "sandshrew": {"evolves_to": "sandslash", "level": 22},
+    "nidoran-f": {"evolves_to": "nidorina", "level": 16},
+    "nidorina": {"evolves_to": "nidoqueen", "level": 36},
+    "nidoran-m": {"evolves_to": "nidorino", "level": 16},
+    "nidorino": {"evolves_to": "nidoking", "level": 36},
+    "oddish": {"evolves_to": "gloom", "level": 21},
+    "gloom": {"evolves_to": "vileplume", "level": 36},
+    "zubat": {"evolves_to": "golbat", "level": 22},
+    "machop": {"evolves_to": "machoke", "level": 28},
+    "machoke": {"evolves_to": "machamp", "level": 40},
+    "geodude": {"evolves_to": "graveler", "level": 25},
+    "graveler": {"evolves_to": "golem", "level": 40},
+    "gastly": {"evolves_to": "haunter", "level": 25},
+    "haunter": {"evolves_to": "gengar", "level": 40},
+    "magikarp": {"evolves_to": "gyarados", "level": 20},
+    "dratini": {"evolves_to": "dragonair", "level": 30},
+    "dragonair": {"evolves_to": "dragonite", "level": 55}
+}
+
+# Global spawn tracking
+spawn_tracker = {}
+active_users = {}
+spawned_pokemon = {}
+
+
+# ============================================
+# PART 2: HELPER FUNCTIONS FOR SPAWN SYSTEM
+# Add these after your existing helper functions
+# ============================================
+
+def get_pokemon_rarity(pokemon_name):
+    """Returns the rarity tier of a pokemon."""
+    for rarity, data in RARITY_TIERS.items():
+        if pokemon_name in data["pokemon"]:
+            return rarity
+    return "common"
+
+def get_required_ball(rarity):
+    """Returns the required ball type for a rarity."""
+    return RARITY_TIERS[rarity]["ball_required"]
+
+def get_catch_rate(rarity):
+    """Returns the catch rate for a rarity."""
+    return RARITY_TIERS[rarity]["catch_rate"]
+
+def spawn_random_pokemon():
+    """Spawns a random pokemon based on weighted rarity."""
+    weights = []
+    pokemon_pool = []
+
+    for rarity, data in RARITY_TIERS.items():
+        for poke in data["pokemon"]:
+            if poke in pokemon_data:  # Only spawn if we have data
+                weights.append(data["spawn_weight"])
+                pokemon_pool.append(poke)
+
+    if not pokemon_pool:
+        return None
+
+    return random.choices(pokemon_pool, weights=weights, k=1)[0]
+
+def get_moves_for_level(pokemon_name, level):
+    """Returns moves a pokemon should know at a given level."""
+    all_moves = pokemon_data.get(pokemon_name, {}).get("moves", [])
+
+    # For now, give up to 4 random moves from available pool
+    # In production, you'd want level-based move learning
+    if len(all_moves) <= 4:
+        return all_moves
+
+    return random.sample(all_moves, 4)
+
+def can_evolve(pokemon):
+    """Checks if a pokemon can evolve."""
+    poke_name = pokemon["name"]
+    if poke_name not in EVOLUTION_DATA:
+        return False, None
+
+    evo_data = EVOLUTION_DATA[poke_name]
+    if pokemon["level"] >= evo_data["level"]:
+        return True, evo_data["evolves_to"]
+
+    return False, None
+
+async def evolve_pokemon(pokemon):
+    """Evolves a pokemon and updates its stats."""
+    can_evo, new_form = can_evolve(pokemon)
+
+    if not can_evo:
+        return False, None
+
+    # Update pokemon
+    old_name = pokemon["name"]
+    pokemon["name"] = new_form
+
+    # Recalculate stats
+    pokemon["stats"] = calculate_actual_stats(new_form, pokemon["level"], pokemon["ivs"])
+    pokemon["current_hp"] = pokemon["stats"]["HP"]
+
+    # Update moves pool (keep existing moves but allow learning new ones)
+    available_moves = pokemon_data.get(new_form, {}).get("moves", [])
+
+    return True, old_name
+
+async def spawn_pokemon_in_channel(channel):
+    """Spawns a wild pokemon in the channel."""
+    pokemon_name = spawn_random_pokemon()
+
+    if not pokemon_name:
+        return
+
+    rarity = get_pokemon_rarity(pokemon_name)
+    level = random.randint(1, 30)
+
+    channel_id = str(channel.id)
+    spawned_pokemon[channel_id] = {
+        "name": pokemon_name,
+        "level": level,
+        "rarity": rarity,
+        "attempts": 0,
+        "failed_catchers": set()
+    }
+
+    poke_image = pokedex_data.get(pokemon_name, {}).get('image_url', '')
+    poke_types = pokemon_data.get(pokemon_name, {}).get('types', ['Unknown'])
+    types_str = "/".join(poke_types)
+
+    rarity_emojis = {
+        "common": "⚪",
+        "uncommon": "🟢",
+        "rare": "🔵",
+        "epic": "🟣",
+        "legendary": "🟠",
+        "mythical": "🔴"
+    }
+    rarity_emoji = rarity_emojis.get(rarity, "⚪")
+
+    embed = discord.Embed(
+        title="🌿 A wild Pokémon has appeared!",
+        description=f"A wild **{pokemon_name.capitalize()}** appeared!\nType `!catch` to catch it!",
+        color=0x00FF00
+    )
+
+    if poke_image:
+        embed.set_image(url=poke_image)
+
+    embed.add_field(name="Level", value=f"**{level}**", inline=True)
+    embed.add_field(name="Type", value=f"**{types_str}**", inline=True)
+    embed.add_field(name="Rarity", value=f"{rarity_emoji} **{rarity.capitalize()}**", inline=True)
+
+    required_ball = get_required_ball(rarity)
+    ball_names = {"pokeball": "Poké Ball", "greatball": "Great Ball", "ultraball": "Ultra Ball", "masterball": "Master Ball"}
+    embed.set_footer(text=f"Required: {ball_names[required_ball]} • Hurry before it runs away!")
+
+    await channel.send(embed=embed)
+
 
 # --- Global Data Stores ---
 user_data = {}
@@ -722,37 +942,354 @@ async def on_message(message):
 
     # Handle DM messages for battle move selection
     if isinstance(message.channel, discord.DMChannel):
-        # Check if user is in an active battle
         for channel_id, battle in active_battles.items():
             if isinstance(battle, Battle):
                 if message.author in [battle.challenger, battle.opponent]:
-                    # Check if message is a fight command in DM
                     if message.content.startswith("!fight "):
                         move_name = message.content[7:].strip()
                         await battle.process_move_from_dm(message.author, move_name)
                     return
 
-    # XP gain system (only in server channels, not DMs)
-    if not isinstance(message.channel, discord.DMChannel):
-        user_id = str(message.author.id)
-        if user_id in user_data and user_data[user_id].get("pokemons"):
-            player_data = user_data[user_id]
-            if 0 <= player_data["selected_pokemon_index"] < len(player_data["pokemons"]):
-                selected_pokemon = player_data["pokemons"][player_data["selected_pokemon_index"]]
+    # Skip spawn system for DMs
+    if isinstance(message.channel, discord.DMChannel):
+        return
 
-                selected_pokemon["xp"] += 5
-                if selected_pokemon["xp"] >= 100:
-                    selected_pokemon["xp"] -= 100
-                    selected_pokemon["level"] += 1
-                    selected_pokemon["stats"] = calculate_actual_stats(
-                        selected_pokemon["name"], 
-                        selected_pokemon["level"], 
-                        selected_pokemon["ivs"]
-                    )
-                    selected_pokemon["current_hp"] = selected_pokemon["stats"]["HP"]
-                    await message.channel.send(
-                        f"🎉 Congrats {message.author.mention}! Your {selected_pokemon['name'].capitalize()} is now **Level {selected_pokemon['level']}**!"
-                    )
+    guild_id = str(message.guild.id)
+    channel_id = str(message.channel.id)
+    user_id = str(message.author.id)
+
+    # Track active users
+    current_time = asyncio.get_event_loop().time()
+    if guild_id not in active_users:
+        active_users[guild_id] = {}
+    active_users[guild_id][user_id] = current_time
+
+    # Clean up old active users (older than 5 minutes)
+    cutoff_time = current_time - 300
+    active_users[guild_id] = {uid: time for uid, time in active_users[guild_id].items() if time > cutoff_time}
+
+    # Initialize spawn tracker for this channel
+    if channel_id not in spawn_tracker:
+        spawn_tracker[channel_id] = {"messages": 0, "last_spawn": 0}
+
+    spawn_tracker[channel_id]["messages"] += 1
+
+    # Determine spawn threshold based on server activity
+    active_user_count = len(active_users.get(guild_id, {}))
+    threshold = SPAWN_ACTIVE_MESSAGES if active_user_count >= SPAWN_ACTIVE_THRESHOLD else SPAWN_BASE_MESSAGES
+
+    # Check if we should spawn
+    if spawn_tracker[channel_id]["messages"] >= threshold:
+        # Check if there's already a pokemon spawned in this channel
+        if channel_id not in spawned_pokemon:
+            await spawn_pokemon_in_channel(message.channel)
+            spawn_tracker[channel_id]["messages"] = 0
+            spawn_tracker[channel_id]["last_spawn"] = current_time
+
+    # XP gain system for selected pokemon
+    if user_id in user_data and user_data[user_id].get("pokemons"):
+        player_data = user_data[user_id]
+        if 0 <= player_data["selected_pokemon_index"] < len(player_data["pokemons"]):
+            selected_pokemon = player_data["pokemons"][player_data["selected_pokemon_index"]]
+
+            selected_pokemon["xp"] += 5
+            if selected_pokemon["xp"] >= 100:
+                selected_pokemon["xp"] -= 100
+                selected_pokemon["level"] += 1
+
+                # Recalculate stats
+                selected_pokemon["stats"] = calculate_actual_stats(
+                    selected_pokemon["name"], 
+                    selected_pokemon["level"], 
+                    selected_pokemon["ivs"]
+                )
+                selected_pokemon["current_hp"] = selected_pokemon["stats"]["HP"]
+
+                await message.channel.send(
+                    f"🎉 Congrats {message.author.mention}! Your {selected_pokemon['name'].capitalize()} is now **Level {selected_pokemon['level']}**!"
+                )
+
+
+                # Check for evolution
+                can_evo, new_form = can_evolve(selected_pokemon)
+                if can_evo:
+                    old_name = selected_pokemon['name']
+                    evolved, _ = await evolve_pokemon(selected_pokemon)
+                    if evolved:
+                        await message.channel.send(
+                            f"✨ What? {old_name.capitalize()} is evolving!\n"
+                            f"🎊 Your {old_name.capitalize()} evolved into **{selected_pokemon['name'].capitalize()}**!"
+                        )
+
+@bot.command()
+async def catch(ctx):
+    """Attempts to catch the spawned pokemon."""
+    channel_id = str(ctx.channel.id)
+    user_id = str(ctx.author.id)
+
+    if channel_id not in spawned_pokemon:
+        await ctx.send("❌ There's no wild Pokémon here!")
+        return
+
+    if user_id not in user_data or not user_data[user_id].get("pokemons"):
+        await ctx.send("❌ You need to start your journey first! Use `!start`")
+        return
+
+    if user_id in spawned_pokemon[channel_id]["failed_catchers"]:
+        await ctx.send("❌ You already failed to catch this Pokémon! Let others try.")
+        return
+
+    spawn_data = spawned_pokemon[channel_id]
+    pokemon_name = spawn_data["name"]
+    level = spawn_data["level"]
+    rarity = spawn_data["rarity"]
+
+    required_ball = get_required_ball(rarity)
+
+    if user_id not in user_balance:
+        init_user_balance(user_id)
+
+    if user_balance[user_id]["pokeballs"][required_ball] <= 0:
+        ball_names = {"pokeball": "Poké Ball", "greatball": "Great Ball", "ultraball": "Ultra Ball", "masterball": "Master Ball"}
+        await ctx.send(f"❌ You need a **{ball_names[required_ball]}** to catch this Pokémon!")
+        return
+
+    user_balance[user_id]["pokeballs"][required_ball] -= 1
+
+    catch_rate = get_catch_rate(rarity)
+    roll = random.randint(1, 100)
+
+    if roll <= catch_rate:
+        ivs = generate_ivs()
+        stats = calculate_actual_stats(pokemon_name, level, ivs)
+        moves = get_moves_for_level(pokemon_name, level)
+
+        new_pokemon = {
+            "name": pokemon_name,
+            "level": level,
+            "xp": 0,
+            "gender": random.choice(["Male", "Female"]),
+            "nature": random.choice(["Adamant", "Bold", "Brave", "Calm", "Gentle", "Hardy", "Jolly", "Modest", "Quiet", "Timid"]),
+            "ivs": ivs,
+            "stats": stats,
+            "current_hp": stats["HP"],
+            "moves": moves[:4]
+        }
+
+        user_data[user_id]["pokemons"].append(new_pokemon)
+
+        iv_percent = sum(ivs.values()) / (31 * 6) * 100
+
+        embed = discord.Embed(
+            title="🎉 Gotcha!",
+            description=f"**{ctx.author.display_name}** caught a **{pokemon_name.capitalize()}**!",
+            color=0xFFD700
+        )
+
+        poke_image = pokedex_data.get(pokemon_name, {}).get('image_url')
+        if poke_image:
+            embed.set_thumbnail(url=poke_image)
+
+        embed.add_field(name="Level", value=f"**{level}**", inline=True)
+        embed.add_field(name="Nature", value=f"**{new_pokemon['nature']}**", inline=True)
+        embed.add_field(name="IV%", value=f"**{iv_percent:.1f}%**", inline=True)
+
+        await ctx.send(embed=embed)
+
+        del spawned_pokemon[channel_id]
+
+    else:
+        spawn_data["attempts"] += 1
+        spawn_data["failed_catchers"].add(user_id)
+
+        if spawn_data["attempts"] >= MAX_CATCH_ATTEMPTS:
+            await ctx.send(f"💨 The wild {pokemon_name.capitalize()} ran away after {MAX_CATCH_ATTEMPTS} failed attempts!")
+            del spawned_pokemon[channel_id]
+        else:
+            attempts_left = MAX_CATCH_ATTEMPTS - spawn_data["attempts"]
+            await ctx.send(f"❌ {ctx.author.mention} failed to catch it! **{attempts_left}** attempts remaining for others.")
+
+@bot.command()
+async def evolve(ctx):
+    """Manually evolve your selected pokemon if it's ready."""
+    user_id = str(ctx.author.id)
+
+    if user_id not in user_data or not user_data[user_id].get("pokemons"):
+        await ctx.send("❌ You haven't started your journey yet!")
+        return
+
+    player_data = user_data[user_id]
+    selected_pokemon = player_data["pokemons"][player_data["selected_pokemon_index"]]
+
+    can_evo, new_form = can_evolve(selected_pokemon)
+
+    if not can_evo:
+        if selected_pokemon["name"] not in EVOLUTION_DATA:
+            await ctx.send(f"❌ {selected_pokemon['name'].capitalize()} cannot evolve!")
+        else:
+            required_level = EVOLUTION_DATA[selected_pokemon["name"]]["level"]
+            await ctx.send(f"❌ {selected_pokemon['name'].capitalize()} can evolve at level {required_level}! (Current: {selected_pokemon['level']})")
+        return
+
+    old_name = selected_pokemon['name']
+    evolved, _ = await evolve_pokemon(selected_pokemon)
+
+    if evolved:
+        embed = discord.Embed(
+            title="✨ Evolution!",
+            description=f"Your **{old_name.capitalize()}** evolved into **{selected_pokemon['name'].capitalize()}**!",
+            color=0xFFD700
+        )
+
+        poke_image = pokedex_data.get(selected_pokemon['name'], {}).get('image_url')
+        if poke_image:
+            embed.set_image(url=poke_image)
+
+        embed.add_field(name="New Stats", value="\n".join([f"**{stat}:** {val}" for stat, val in selected_pokemon['stats'].items()]), inline=False)
+
+        await ctx.send(embed=embed)
+
+@bot.command()
+async def learn(ctx, *, move_name: str = None):
+    """Learn a new move or view available moves."""
+    user_id = str(ctx.author.id)
+
+    if user_id not in user_data or not user_data[user_id].get("pokemons"):
+        await ctx.send("❌ You haven't started your journey yet!")
+        return
+
+    player_data = user_data[user_id]
+    selected_pokemon = player_data["pokemons"][player_data["selected_pokemon_index"]]
+
+    all_moves = pokemon_data.get(selected_pokemon["name"], {}).get("moves", [])
+    current_moves = selected_pokemon.get("moves", [])
+
+    if not move_name:
+        available = [m for m in all_moves if m.lower() not in [cm.lower() for cm in current_moves]]
+
+        embed = discord.Embed(
+            title=f"📚 Moves for {selected_pokemon['name'].capitalize()}",
+            description=f"Level {selected_pokemon['level']}",
+            color=0x3B88C3
+        )
+
+        embed.add_field(
+            name="Current Moves",
+            value="\n".join([f"• **{m.title()}**" for m in current_moves]) if current_moves else "None",
+            inline=False
+        )
+
+        if available:
+            available_display = "\n".join([f"• {m.title()}" for m in available[:10]])
+            if len(available) > 10:
+                available_display += f"\n... and {len(available) - 10} more"
+
+            embed.add_field(
+                name="Available Moves",
+                value=available_display,
+                inline=False
+            )
+
+        embed.set_footer(text=f"Use !learn <move name> to learn a new move")
+
+        await ctx.send(embed=embed)
+        return
+
+    move_name_normalized = move_name.lower().replace(" ", "-")
+
+    if move_name_normalized not in [m.lower().replace(" ", "-") for m in all_moves]:
+        await ctx.send(f"❌ {selected_pokemon['name'].capitalize()} cannot learn {move_name.title()}!")
+        return
+
+    if move_name_normalized in [m.lower().replace(" ", "-") for m in current_moves]:
+        await ctx.send(f"❌ {selected_pokemon['name'].capitalize()} already knows {move_name.title()}!")
+        return
+
+    if len(current_moves) >= 4:
+        moves_list = "\n".join([f"{i+1}. **{m.title()}**" for i, m in enumerate(current_moves)])
+        await ctx.send(
+            f"{selected_pokemon['name'].capitalize()} can only know 4 moves!\n\n"
+            f"Current moves:\n{moves_list}\n\n"
+            f"Reply with the number (1-4) of the move to replace, or `cancel` to cancel."
+        )
+
+        def check(m):
+            return m.author == ctx.author and m.channel == ctx.channel and (m.content.isdigit() or m.content.lower() == "cancel")
+
+        try:
+            msg = await bot.wait_for('message', check=check, timeout=30)
+
+            if msg.content.lower() == "cancel":
+                await ctx.send("Cancelled move learning.")
+                return
+
+            slot = int(msg.content) - 1
+            if slot < 0 or slot >= 4:
+                await ctx.send("❌ Invalid slot number!")
+                return
+
+            old_move = current_moves[slot]
+            current_moves[slot] = move_name
+
+            await ctx.send(f"✅ {selected_pokemon['name'].capitalize()} forgot **{old_move.title()}** and learned **{move_name.title()}**!")
+
+        except asyncio.TimeoutError:
+            await ctx.send("⏱️ Move learning timed out.")
+            return
+    else:
+        current_moves.append(move_name)
+        await ctx.send(f"✅ {selected_pokemon['name'].capitalize()} learned **{move_name.title()}**!")
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def forcespawn(ctx, pokemon_name: str = None, level: int = None):
+    """Force spawn a specific pokemon (admin only)."""
+    if pokemon_name:
+        pokemon_name = pokemon_name.lower()
+        if pokemon_name not in pokemon_data:
+            await ctx.send(f"❌ Pokemon '{pokemon_name}' not found!")
+            return
+    else:
+        pokemon_name = spawn_random_pokemon()
+
+    if not level:
+        level = random.randint(1, 30)
+
+    # Override spawn system
+    channel_id = str(ctx.channel.id)
+    rarity = get_pokemon_rarity(pokemon_name)
+
+    spawned_pokemon[channel_id] = {
+        "name": pokemon_name,
+        "level": level,
+        "rarity": rarity,
+        "attempts": 0,
+        "failed_catchers": set()
+    }
+
+    await spawn_pokemon_in_channel(ctx.channel)
+
+
+@bot.command()
+async def spawnrate(ctx):
+    """Shows spawn information for current channel."""
+    channel_id = str(ctx.channel.id)
+
+    if channel_id not in spawn_tracker:
+        await ctx.send("No spawn data for this channel yet!")
+        return
+
+    messages = spawn_tracker[channel_id]["messages"]
+    guild_id = str(ctx.guild.id)
+    active_count = len(active_users.get(guild_id, {}))
+    threshold = SPAWN_ACTIVE_MESSAGES if active_count >= SPAWN_ACTIVE_THRESHOLD else SPAWN_BASE_MESSAGES
+
+    embed = discord.Embed(title="📊 Spawn Info", color=0x00AAFF)
+    embed.add_field(name="Messages Since Last Spawn", value=f"{messages}/{threshold}", inline=True)
+    embed.add_field(name="Active Users", value=str(active_count), inline=True)
+    embed.add_field(name="Spawned Pokemon", value="Yes" if channel_id in spawned_pokemon else "No", inline=True)
+
+    await ctx.send(embed=embed)
 
 
 
@@ -1079,54 +1616,56 @@ async def info(ctx, index: int = None):
 
     await ctx.send(embed=embed)
 
+# -----------------------------------------------------------------
+# PASTE THIS ENTIRE BLOCK INTO YOUR main.py
+# (Replaces your existing !team command)
+# -----------------------------------------------------------------
+
 @bot.command()
 async def team(ctx):
     """
-    Shows team with Pokémon type emojis (supports dual-type).
-    Clean visual display with type indicators.
+    Shows a user's Pokémon collection in a clean, 3-column embed.
+    (No 6-poke limit, no thumbnail)
     """
     user_id = str(ctx.author.id)
 
     if user_id not in user_data or not user_data[user_id].get("pokemons"):
-        await ctx.send("❌ You don't have any Pokémon in your team yet!")
+        await ctx.send("❌ You don't have any Pokémon yet!")
         return
 
     player_data = user_data[user_id]
+    all_pokemon = player_data["pokemons"]  # This is their full collection
 
     # Create embed
     embed = discord.Embed(
-        title=f"🎒 {ctx.author.display_name}'s Pokémon Team",
+        title=f"🎒 {ctx.author.display_name}'s Pokémon Collection", # Changed title
         color=0x3BA55D  # Green
     )
 
+    # --- CHANGE 2: Removed '/ 6' limit ---
     embed.set_author(
-        name=f"{len(player_data['pokemons'])} Pokémon",
+        name=f"Total Pokémon: {len(all_pokemon)}", # Changed from "Team Size: ... / 6"
         icon_url=ctx.author.display_avatar.url
     )
 
-    # Type emoji mapping
+    # Type emoji mapping (using your existing map)
     type_emojis = {
-        "Normal": "⚪",
-        "Fire": "🔥",
-        "Water": "💧",
-        "Electric": "⚡",
-        "Grass": "🌿",
-        "Ice": "❄️",
-        "Fighting": "🥊",
-        "Poison": "☠️",
-        "Ground": "🌍",
-        "Flying": "🕊️",
-        "Psychic": "🔮",
-        "Bug": "🐛",
-        "Rock": "🪨",
-        "Ghost": "👻",
-        "Dragon": "🐉",
-        "Dark": "🌑",
-        "Steel": "⚙️",
-        "Fairy": "🧚"
+        "Normal": "⚪", "Fire": "🔥", "Water": "💧", "Electric": "⚡", "Grass": "🌿",
+        "Ice": "❄️", "Fighting": "🥊", "Poison": "☠️", "Ground": "🌍", "Flying": "🕊️",
+        "Psychic": "🔮", "Bug": "🐛", "Rock": "🪨", "Ghost": "👻", "Dragon": "🐉",
+        "Dark": "🌑", "Steel": "⚙️", "Fairy": "🧚"
     }
 
-    for i, poke in enumerate(player_data["pokemons"]):
+    # --- Build three columns as strings ---
+    pokemon_col = ""
+    type_col = ""
+    info_col = ""
+
+    # --- NEW: Limit to 25 to avoid embed breaking ---
+    display_limit = 25 
+    pokemon_to_display = all_pokemon[:display_limit]
+
+    for i, poke in enumerate(pokemon_to_display):
         # Calculate IV
         iv_percent = sum(poke["ivs"].values()) / (31 * 6) * 100
 
@@ -1135,10 +1674,8 @@ async def team(ctx):
 
         # Build type emoji display
         if len(poke_types) == 1:
-            # Single type
             type_display = type_emojis.get(poke_types[0], "⚪")
         else:
-            # Dual type (e.g., 💧/☠️ for Water/Poison)
             type1_emoji = type_emojis.get(poke_types[0], "⚪")
             type2_emoji = type_emojis.get(poke_types[1], "⚪")
             type_display = f"{type1_emoji}/{type2_emoji}"
@@ -1147,22 +1684,41 @@ async def team(ctx):
         gender = "♂️" if poke['gender'] == "Male" else "♀️"
 
         # Selected marker
-        selected_mark = "🔹 " if i == player_data["selected_pokemon_index"] else ""
+        selected_mark = "▶️ " if i == player_data["selected_pokemon_index"] else ""
 
-        # Build display line
-        name_display = f"{selected_mark}{type_display} **{poke['name'].capitalize()}** {gender}"
-        stats_display = f"Lvl. **{poke['level']}** • IV: **{iv_percent:.1f}%**"
+        # 1. Pokémon Column
+        pokemon_col += f"**{i+1}.** {selected_mark}**{poke['name'].capitalize()}** {gender}\n"
 
-        # Add as field (one per Pokémon for clean separation)
-        embed.add_field(
-            name=f"{i+1}. {name_display}",
-            value=stats_display,
-            inline=False
-        )
+        # 2. Type Column
+        type_col += f"{type_display}\n"
 
-    # Footer
-    selected = player_data["selected_pokemon_index"] + 1
-    embed.set_footer(text=f"✨ Currently selected: Pokémon #{selected} • Use !info <number> for details")
+        # 3. Info Column
+        info_col += f"Lvl. **{poke['level']}** | IV: **{iv_percent:.1f}%**\n"
+
+    # --- Add the three columns as inline fields ---
+    # \u200b is a zero-width space to prevent empty field errors if list is empty
+    embed.add_field(name="Pokémon", value=pokemon_col + "\u200b", inline=True)
+    embed.add_field(name="Type", value=type_col + "\u200b", inline=True)
+    embed.add_field(name="Info", value=info_col + "\u200b", inline=True)
+
+    # --- Footer ---
+    selected_poke = all_pokemon[player_data["selected_pokemon_index"]]
+    selected_name = selected_poke['name'].capitalize()
+    selected_level = selected_poke['level']
+    selected_hp = selected_poke['current_hp']
+    max_hp = selected_poke['stats']['HP']
+
+    footer_text = f"✨ Active: {selected_name} • Lvl {selected_level} • HP: {selected_hp}/{max_hp}\n" \
+                  f"Use !select <number> to switch • !info <number> for details"
+
+    # Add note if we are only showing a part of the collection
+    if len(all_pokemon) > display_limit:
+        footer_text += f"\n\nDisplaying {display_limit} of {len(all_pokemon)} Pokémon. (Page 1)"
+
+    embed.set_footer(text=footer_text)
+
+    # --- CHANGE 1: Removed thumbnail ---
+    # The embed.set_thumbnail() lines have been deleted.
 
     await ctx.send(embed=embed)
 

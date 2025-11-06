@@ -2,9 +2,9 @@
     "875243736987217920": {
         "pokemons": [
             {
-                "name": "squirtle",
-                "level": 19,
-                "xp": 90,
+                "name": "wartortle",
+                "level": 22,
+                "xp": 80,
                 "gender": "Male",
                 "nature": "Brave",
                 "ivs": {
@@ -16,14 +16,14 @@
                     "speed": 11
                 },
                 "stats": {
-                    "HP": 48,
-                    "Attack": 23,
-                    "Defense": 35,
-                    "Sp. Atk": 28,
-                    "Sp. Def": 34,
-                    "Speed": 23
+                    "HP": 61,
+                    "Attack": 32,
+                    "Defense": 46,
+                    "Sp. Atk": 38,
+                    "Sp. Def": 46,
+                    "Speed": 32
                 },
-                "current_hp": 48,
+                "current_hp": 61,
                 "moves": [
                     "Tackle",
                     "Tail Whip",
